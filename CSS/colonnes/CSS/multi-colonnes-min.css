@@ -1,0 +1,69 @@
+.num1{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}
+
+.num2{
+    -webkit-columns: 4 150px;
+    -moz-columns: 4 150px;
+    columns: 4 150px;
+}
+
+.num3{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+
+    -webkit-column-gap: 100px;
+    -moz-column-gap: 100px;
+    column-gap: 100px;
+}
+
+.num4{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+
+    -webkit-column-rule: 2px dashed green;
+    -moz-column-rule: 2px dashed green;
+    column-rule: 2px dashed green;
+}
+
+.num5{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}
+
+.num5 h2{
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+}
+
+.num6{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}
+.num6 h2{
+    break-before: column;
+    -webkit-column-break-befor: always;
+}
+
+.num7{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+
+    text-align: justify;
+    
+    -webkit-hyphend: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+h1{
+    color: red;
+}

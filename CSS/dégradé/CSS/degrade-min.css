@@ -1,0 +1,72 @@
+div{
+    width: 500px;
+    height: 250px;
+}
+
+.un{
+    background-image: linear-gradient(blue, green);
+}
+
+.deux1{
+    background-image: linear-gradient(to right, blue, green);
+}
+.deux2{
+    background-image: linear-gradient(to top left, blue, green);
+}
+.deux3{
+    background-image: linear-gradient(140deg, blue, green);
+}
+
+.trois{
+    background-image: linear-gradient(to right, blue, green, #0ff, rgb(200, 30, 170));
+}
+.quatre{
+    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+.cinq1{
+    background-image: linear-gradient(to right, blue 0%, green 30%);
+}
+.cinq2{
+    background-image: linear-gradient(to right, blue, green 400px);
+}
+
+/*  --  linear radial  --  */
+
+.six1{
+    background-image: radial-gradient(circle at center, white, blue);
+}
+.six2{
+    background-image: radial-gradient(ellipse at center, white, blue);
+}
+
+.sept1{
+    background-image: radial-gradient(circle at top left, white, green);
+}
+.sept2{
+    background-image: radial-gradient(ellipse at bottom right, white, green);
+}
+
+.huit1{
+    background-image: radial-gradient(closest-corner ellipse at center, white, blue);
+}
+.huit2{
+    background-image: radial-gradient(closest-side circle at center, white, blue);
+}
+.huit3{
+    background-image: radial-gradient(farthest-corner circle at center, white, blue);
+}
+.huit4{
+    background-image: radial-gradient(farthest-side ellipse at center, white, blue);
+}
+
+.neuf{
+    background-image: repeating-linear-gradient(white, blue 100px);
+}
+
+.dix{
+    background-image: repeating-linear-gradient(to right, green, red, blue, green 250px);
+}
+.zero{
+    background-image: repeating-radial-gradient(farthest-side ellipse at center, blue, green, blue 80px);
+}
