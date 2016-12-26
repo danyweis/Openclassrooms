@@ -65,3 +65,23 @@ div{
 #photo11{
     transform: translateX(100px);
 }
+
+#photo12{
+    transform: skewX(50deg);
+}
+
+#photo13{
+    transform: skewY(25deg);
+}
+
+#photo14{
+    transform: scale(0.75) rotate(25deg) skewY(10deg);
+}
+
+#photo16{
+    transform: matrix(1, 0, 0, 1, 20, 0);
+}
+
+#photo17{
+    transform: matrix(1, 2, 3, 4, 5, 6);
+}
