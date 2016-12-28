@@ -67,11 +67,116 @@
     width: 400px;
     height: 200px;
 }
-/*
-.num1{
 
+.num6{
+    width: 250px;
+    height: 150px;
+    background-image: radial-gradient(circle at center, blue, pink);
+
+    transition-property: transform;
+
+    transition-duration: 2s;
+
+    transition-timing-function: ease;
+}
+.num6:hover{
+    transform: translateX(400px);
 }
 
+.num7{
+    width: 250px;
+    height: 150px;
+    background-image: radial-gradient(circle at center, blue, pink);
+
+    transition-property: transform;
+
+    transition-duration: 2s;
+
+    transition-timing-function: linear;
+}
+.num7:hover{
+    transform: translateX(400px);
+}
+.num8{
+    width: 250px;
+    height: 150px;
+    background-image: radial-gradient(circle at center, blue, pink);
+
+    transition-property: transform;
+
+    transition-duration: 2s;
+
+    transition-timing-function: ease-in;
+}
+.num8:hover{
+    transform: translateX(400px);
+}
+.num9{
+    width: 250px;
+    height: 150px;
+    background-image: radial-gradient(circle at center, blue, pink);
+
+    transition-property: transform;
+
+    transition-duration: 2s;
+
+    transition-timing-function: ease-out;
+}
+.num9:hover{
+    transform: translateX(400px);
+}
+.num10{
+    width: 250px;
+    height: 150px;
+    background-image: radial-gradient(circle at center, blue, pink);
+
+    transition-property: transform;
+
+    transition-duration: 2s;
+
+    transition-timing-function: ease-in-out;
+}
+.num10:hover{
+    transform: translateX(400px);
+}
+.num11{
+    width: 250px;
+    height: 150px;
+    background-image: radial-gradient(circle at center, blue, pink);
+
+    transition-property: transform;
+
+    transition-duration: 2s;
+
+    transition-timing-function: cubic-bezier(.31, -0.98, 1, -0.34);
+}
+.num11:hover{
+    transform: translateX(400px);
+}
+
+.num12{
+    width: 250px;
+    height: 150px;
+    background-color: pink;
+
+    transition: background-color 5s ease;
+}
+.num12:hover{
+    background-color: green;
+}
+
+.num13{
+    width: 250px;
+    height: 150px;
+    background-color: pink;
+
+    transition: background-color 2s ease, width 4s ease-in-out;
+}
+.num13:hover{
+    background-color: blue;
+    width: 500px;
+}
+/*
 .num1{
 
 }
