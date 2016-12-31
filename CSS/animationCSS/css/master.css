@@ -1,4 +1,4 @@
-@keyframes masuperanimation {
+@keyframes animation1 {
     0%{
         transform: translateX(0px);
     }
@@ -11,7 +11,7 @@
         transform: translateX(150px) rotate(30deg);
     }
 }
-@-webkit-keyframes masuperanimation {
+@-webkit-keyframes animation1 {
     0%{
         transform: translateX(0px);
     }
@@ -22,12 +22,11 @@
 
     100%{
         transform: translateX(150px) rotate(30deg);
-        /*background-color: green;
-        box-shadow: 6px 6px 10px black;*/
+
     }
 }
 
-.num1{
+.num1, .num2, .num3{
     margin: 100px;
     width: 200px;
     height: 150px;
@@ -35,6 +34,66 @@
 }
 
 .num1:hover{
-    -webkit-animation: masuperanimation 2s;
-    animation: masuperanimation 2s;
+    -webkit-animation: animation1 2s;
+    animation: animation1 2s;
+}
+
+@keyframes animation2 {
+    from{
+        transform: translateX(0px);
+    }
+
+    30%{
+        transform: translateX(150px);
+    }
+
+    60%{
+        transform: translateX(150px) rotate(30deg);
+    }
+
+    80%{
+        transform: translate(100px, 80px) rotate(60deg);
+    }
+
+    to{
+        transform: translate(100px, 80px) rotate(90deg);
+        border-radius: 30px;
+        background-color: red;
+        box-shadow: 6px 6px 10px black;
+    }
+
+}
+
+.num2:hover{
+    animation: animation2 2s steps(3);
+}
+
+@keyframes animation3 {
+    from{
+        transform: translateX(0px);
+    }
+
+    30%{
+        transform: translateX(150px);
+    }
+
+    60%{
+        transform: translateX(150px) rotate(30deg);
+    }
+
+    75%{
+        transform: translate(100px, 80px) rotate(60deg);
+    }
+
+    to{
+        transform: translate(100px, 80px) rotate(90deg);
+        border-radius: 30px;
+        background-color: red;
+        box-shadow: 6px 6px 10px black;
+    }
+
+}
+
+.num3:hover{
+    animation: animation3 2s linear alternate infinite;
 }

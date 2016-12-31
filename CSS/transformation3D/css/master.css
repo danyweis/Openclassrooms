@@ -1,0 +1,65 @@
+body{
+    perspective: 800px;
+    margin-left: 200px; /* juste pour l'exemple */
+}
+div{
+    width: 200px;
+    height: 100px;
+}
+.num1{
+    transform: translateZ(200px);
+
+    /* ce qui suit est just pour montrer l'éffet que ca a! */
+    background-color: blue;
+    z-index: 3;
+    position: absolute;
+}
+.num2{
+    transform: translateZ(0px);
+
+    /* ce qui suit est just pour montrer l'éffet que ca a! */
+    background-color: red;
+    z-index: 2;
+    position: absolute;
+}
+.num3{
+    transform: translateZ(-200px);
+
+    /* ce qui suit est just pour montrer l'éffet que ca a! */
+    background-color: green;
+    z-index: 1;
+    position: absolute;
+}
+
+/*          page rotation.html          */
+
+.num4{
+    transform: rotateX(50deg);
+    background-color: green;
+}
+.num5{
+    transform: rotateY(50deg);
+    background-color: red;
+}
+.num6{
+    transform: rotateZ(50deg);
+    background-color: blue;
+}
+
+.num7{
+    background-color: pink;
+}
+.num7:hover{
+    transform: rotateY(360deg);
+    transition-duration: 3s;
+}
+
+.num8{
+    background-color: violet;
+
+}
+.num8:hover{
+    transform: rotateY(360deg);
+    -moz-transition-duration: 3s;
+    -moz-backface-visibility: hidden;
+}
