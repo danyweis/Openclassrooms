@@ -1,0 +1,79 @@
+body{
+    padding-top: 10px;
+}
+a{
+    margin-left: 20px;
+}
+/*
+Bootstrap propose les classes "container" et "container-fluid".
+La class "container" contient et centre la grille sur une largeur
+fixe, qui s'adapte en fonction de la largeur de l'écran.
+La classe "container-fluid" permet à la grille d'occuper toute la  largeur.
+*/
+
+/*
+Le centrage du conteneur est fait de façon classique
+*/
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+[class*="col-"], footer{
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 6px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*
+Ce sont les mˆmeme règle pour la classe "container-fluid".
+
+Ce qui est ajouté pour la classe "container" est la limite de largeur
+spécifiée par média:
+*/
+
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+
+}
+/*
+L'ordre des medias est du plus étroit vers le plus large.
+De cette manière on a une surcharge des règles cohérente.
+*/
+
+
+/*
+avec:
+    col-sm-offset-6
+ou
+    col-lg-offset-2
+ou
+    ...
+on peut faire sauter des colonnes
+
+Par exemple:
+*/
+
+.col-lg-offset-6{
+    margin-left: 50%;
+}

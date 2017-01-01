@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Une grille avec Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+        <link href="tuto.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+
+            <h1>BOOTSTRAP</h1>
+
+            <a href="miseEnPage.html">Mise en page</a>
+            <a href="secondCas.html">2ème cas</a>
+            <a href="troisiemeCas.html">3ème cas</a>
+            <a href="quatriemeCas.html">4ème cas</a>
+
+            <h1>colonnes en lg</h1>
+            <div class="row">
+                <div class="col-lg-4">4 colonnes</div>
+                <div class="col-lg-8">8 colonnes</div>
+            </div>
+            <h1>colonnes en md</h1>
+            <div class="row">
+                <div class="col-md-4">4 colonnes</div>
+                <div class="col-md-8">8 colonnes</div>
+            </div>
+            <h1>colonnes en sm</h1>
+            <div class="row">
+                <div class="col-sm-4">4 colonnes</div>
+                <div class="col-sm-8">8 colonnes</div>
+            </div>
+            <h1>colonnes en xs</h1>
+            <div class="row">
+                <div class="col-xs-4">4 colonnes</div>
+                <div class="col-xs-8">8 colonnes</div>
+            </div>
+
+            <h1>plusieur rangées en lg</h1>
+            <div class="row">
+                <div class="col-lg-1">1colonne</div>
+                <div class="col-lg-2">2colonnes</div>
+                <div class="col-lg-3">3colonnes</div>
+                <div class="col-lg-6">6colonnes</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">12colonnes</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">6colonnes</div>
+                <div class="col-lg-2">2colonnes</div>
+                <div class="col-lg-4">4colonnes</div>
+            </div>
+
+
+
+    <!-- Sauter des colonnes -->
+
+            <h1>Sauter des colonnes</h1>
+            <div class="row">
+                <div class="col-lg-3">3colonnes</div>
+                <div class="col-lg-6">6colonnes</div>
+                <div class="col-lg-3">3colonnes</div>
+            </div>
+
+    <!-- ici on saute la colonne -->
+
+            <div class="row">
+                <div class="col-lg-3">3colonnes</div>
+                <div class="col-lg-offset-6 col-lg-3">3colonnes</div>
+            </div>
+
+    <!--  ou des multiples colonnes -->
+
+            <div class="row">
+                <div class="col-md-2 col-md-offset-1">2colonnes</div>
+                <div class="col-md-4 col-md-offset-2">4colonnes</div>
+                <div class="col-md-2 col-md-offset-1">2colonnes</div>
+            </div>
+
+
+    <!--  Imbrication d'élement -->
+
+            <h1>Imbrication d'éléments</h1>
+
+            <div class="row">
+                <div class="col-lg-8">8colonnes
+                    <div class="row">
+                        <div class="col-lg-2">2colonnes</div>
+                        <div class="col-lg-7">7colonnes</div>
+                        <div class="col-lg-3">3colonnes</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h1>Élément plus complèxe</h1>
+
+            <div class="row">
+                <div class="col-md-12">12colonnes
+                    <div class="row">
+                        <div class="col-md-8">second niveau avec 8colonnes
+                            <div class="row">
+                                <div class="col-md-4">troisième niveau 4colonnes
+                                </div>
+                                <div class="col-md-offset-2 col-md-6">troisième niveau 6colonnes
+                                    <div class="row">
+                                        <div class="col-md-offset-1 col-md-3">quatrième niveau avec 3colonnes
+
+                                        </div>
+                                        <div class="col-md-offset-1 col-md-5">quatrième niveau avec 5colonnes
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-mid-4">second niveau avec 4colonnes
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- Ordre des colonnes  -->
+
+            <!--
+            La classe col-sm-push-... permet de décaler une colonne vers la droite et
+            la classe col-sm-pull-... fait l'inverse.
+            -->
+
+            <h1>Ordre des colonnes</h1>
+
+            <div class="row">
+                <div class="col-sm-12">12 colonnes
+                    <div class="row">
+                        <div class="col-sm-2 col-sm-push-8">Colonne 1</div>
+                        <div class="col-sm-2 col-sm-push-3">Colonne 2</div>
+                        <div class="col-sm-2 col-sm-pull-2">Colonne 3</div>
+
+                    </div>
+                </div>
+
+            </div>
+
+    <!--  TP -->
+            <h1>Travail pratique</h1>
+
+            <div class="row">
+                <div class="col-xs-6">6 colonnes
+                    <div class="row">
+                        <div class="col-xs-4">4 colonnes</div>
+                        <div class="col-xs-offset-4 col-xs-4">4 colonnes</div>
+                    </div>
+                </div>
+                <div class="col-xs-6">6 colonnes
+                    <div class="row">
+                        <div class="col-xs-4">4 colonnes</div>
+                        <div class="col-xs-8">8 colonnes</div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <a href="miseEnPage.html">Mise en page</a>
+            <br>
+            <br>
+        </div><!-- /.container -->
+    </body>
+</html>
