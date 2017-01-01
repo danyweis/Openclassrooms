@@ -29,6 +29,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/html\/carte.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/html\/carte.html",
+		"oF": 0
+		},
 	"\/html\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -40,6 +46,14 @@
 		"oA": 2,
 		"oAP": "\/html\/rotation.html",
 		"oF": 0
+		},
+	"\/image\/architecture.jpg": {
+		"ft": 16384,
+		"iS": 56899,
+		"oA": 0,
+		"oAP": "\/image\/architecture.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/image\/lifts.jpg": {
 		"ft": 16384,

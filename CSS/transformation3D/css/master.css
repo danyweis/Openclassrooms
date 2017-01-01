@@ -1,7 +1,12 @@
+a{
+    margin-left: 50px;/* juste pour l'exemple */
+}
+
 body{
     perspective: 800px;
     margin-left: 200px; /* juste pour l'exemple */
 }
+
 div{
     width: 200px;
     height: 100px;
@@ -60,6 +65,43 @@ div{
 }
 .num8:hover{
     transform: rotateY(360deg);
-    -moz-transition-duration: 3s;
-    -moz-backface-visibility: hidden;
+    transition-duration: 3s;
+    backface-visibility: hidden;
+}
+
+
+/*          Catre deux faces             */
+
+#devant, #derriere{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    opacity: 0.5;
+    border: 2px solid #444;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: arial, sans-serif;
+    transition: 2s;
+    backface-visibility: hidden;
+}
+
+#devant{
+    z-index: 100;
+    background-image: url(../image/lifts.jpg);
+    background-size: cover;
+}
+#derriere{
+    z-index: 50;
+    background-image: url(../image/architecture.jpg);
+    background-size: cover;
+    transform: rotateY(-180deg);
+}
+
+#devant:hover{
+    transform: rotateY(360deg);
+}
+#devant:hover + #derriere{
+    transform: rotateY(180deg);
 }
