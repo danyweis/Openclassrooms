@@ -9,6 +9,131 @@
 	],
 "creatorBuild": "25479",
 "files": {
+	"\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/css\/bootstrap-theme-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css.map",
+		"oF": 0
+		},
+	"\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min.css.map",
+		"oF": 0
+		},
+	"\/bootstrap-3.3.7-dist\/css\/bootstrap.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/css\/bootstrap-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bootstrap-3.3.7-dist\/css\/bootstrap.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/css\/bootstrap.css.map",
+		"oF": 0
+		},
+	"\/bootstrap-3.3.7-dist\/css\/bootstrap.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/css\/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bootstrap-3.3.7-dist\/css\/bootstrap.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/css\/bootstrap.min.css.map",
+		"oF": 0
+		},
+	"\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.eot",
+		"oF": 0
+		},
+	"\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.ttf",
+		"oF": 0
+		},
+	"\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff",
+		"oF": 0
+		},
+	"\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff2",
+		"oF": 0
+		},
+	"\/bootstrap-3.3.7-dist\/js\/bootstrap.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/bootstrap-3.3.7-dist\/js\/bootstrap-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bootstrap-3.3.7-dist\/js\/bootstrap.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/bootstrap-3.3.7-dist\/js\/bootstrap.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bootstrap-3.3.7-dist\/js\/npm.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/bootstrap-3.3.7-dist\/js\/npm-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/chapitre2\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css": {
 		"aP": 0,
 		"bl": 0,
@@ -183,6 +308,175 @@
 		"oAP": "\/chapitre2\/tuto-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap-theme-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css.map",
+		"oF": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.min.css.map",
+		"oF": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap.css.map",
+		"oF": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/css\/bootstrap.min.css.map",
+		"oF": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.eot",
+		"oF": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.ttf",
+		"oF": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff",
+		"oF": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/fonts\/glyphicons-halflings-regular.woff2",
+		"oF": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/js\/bootstrap.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/js\/bootstrap-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/js\/bootstrap.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/js\/bootstrap.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/js\/npm.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapitre3\/bootstrap\/bootstrap-3.3.7-dist\/js\/npm-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapitre3\/css\/master-min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/chapitre3\/css\/master-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/chapitre3\/css\/master.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/chapitre3\/css\/master-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/chapitre3\/html\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/html\/index.html",
+		"oF": 0
+		},
+	"\/chapitre3\/html\/pageExemple1.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/html\/pageExemple1.html",
+		"oF": 0
+		},
+	"\/chapitre3\/html\/responsiveEx1.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/html\/responsiveEx1.html",
+		"oF": 0
+		},
+	"\/chapitre3\/html\/responsiveEx2.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapitre3\/html\/responsiveEx2.html",
+		"oF": 0
 		},
 	"\/chapitre3\/images\/05539627-photo-archos-familypad.jpg": {
 		"ft": 16384,

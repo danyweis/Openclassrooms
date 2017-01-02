@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap chapitre 2</title>
+        <link rel="stylesheet" href="../css/master.css">
+        <link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+        <style type="text/css">
+        [class*="col-"]{
+            background-color: lightgreen;
+            border: 2px solid black;
+            border-radius: 6px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .col-lg-5 { line-height: 200px; }
+        .col-lg-12 { line-height: 80px; }
+        .col-md-4, .col-sm-10 { line-height: 200px; }
+        .col-lg-2 { line-height: 100px; }
+        </style>
+
+    </head>
+    <body>
+        <a href="index.html">Combinaison</a>
+        <a href="pageExemple1.html">Page exemple</a>
+        <a href="responsiveEx1.html">Responsive ex:1</a>
+        <hr>
+
+
+
+
+        <header>
+            <div class="visible-lg col-lg-12">
+                Entête large
+            </div>
+            <div class="visible-md col-lg-12">
+                Entête medium
+            </div>
+            <div class="visible-sm col-lg-12">
+                Entête tablettte
+            </div>
+            <div class="visible-xs col-lg-12">
+                Entête Smartphone
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="row">
+
+                <nav class="col- md-12 col-lg-2">
+                    Menu
+                </nav>
+                <section class="col-md-6 col-lg-5">
+                    Section
+                </section>
+                <section class="col-md-6 col-lg-5">
+                    Section
+                </section>
+            </div>
+            <footer class="row">
+                <div class="col-lg-12">
+                    Pied de page
+                </div>
+            </footer>
+        </div>  <!--    CONTAINER  -->
+        <hr>
+        <a href="index.html">Combinaison</a>
+        <a href="pageExemple1.html">Page exemple</a>
+        <a href="responsiveEx1.html">Responsive ex:1</a>
+    </body>
+</html>
