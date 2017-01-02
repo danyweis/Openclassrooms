@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulaires</title>
+        <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <legend>Légende</legend>
+                Text: <input type="text">
+                Textarea: <textarea id="textarea"></textarea>
+                Select:
+                    <select>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                <button>Envoyer</button>
+            </form>
+
+            <h1>petit changement avec Bootstrap</h1>
+
+            <form class="col-lg-6">
+                <legend>Légende</legend>
+                <label for="text">Text:</label>
+                <input id="text" type="text" class="form-control">
+                <label for="textarea">Textarea:</label>
+                <textarea id="textarea" type="textarea" class="form-control"></textarea>
+                <label for="select">Select:</label>
+                    <select class="form-control">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                <button>Envoyer</button>
+            </form>
+
+            <h1>Bootstrap: utilisant la classe "form-group"</h1>
+
+            <form class="col-lg-6">
+                <legend>Légende</legend>
+                    <div class="form-group">
+                        <label for="text">Text:</label>
+                        <input id="text" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">Textarea:</label>
+                        <textarea id="textarea" type="textarea" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="select">Select:</label>
+                        <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                <button>Envoyer</button>
+            </form>
+        </div>
+    </body>
+</html>
