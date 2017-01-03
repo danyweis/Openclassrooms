@@ -22,9 +22,11 @@
                 <button>Envoyer</button>
             </form>
 
-            <h1>petit changement avec Bootstrap</h1>
 
-            <form class="col-lg-6">
+
+            <form class="col-lg-12 ">
+                <h1>petit changement avec Bootstrap</h1>
+
                 <legend>Légende</legend>
                 <label for="text">Text:</label>
                 <input id="text" type="text" class="form-control">
@@ -39,9 +41,10 @@
                 <button>Envoyer</button>
             </form>
 
-            <h1>Bootstrap: utilisant la classe "form-group"</h1>
 
-            <form class="col-lg-6">
+
+            <form class="col-lg-12">
+                <h1>Bootstrap: utilisant la classe "form-group"</h1>
                 <legend>Légende</legend>
                     <div class="form-group">
                         <label for="text">Text:</label>
@@ -62,17 +65,19 @@
                 <button>Envoyer</button>
             </form>
 
-            <h1>formulaire en ligne</h1>
+
 
             <form>
+                <h1>formulaire en ligne</h1>
                 <input type="text">
                 <input type="checkbox"> Se rappeler de moi
                 <button>Envoyer</button>
             </form>
 
-            <h1>un peut plus joli</h1>
+
 
             <form class="form-inline">
+                <h1>un peut plus joli</h1>
                 <div class="form-group">
                     <label class="sr-only" for="text">Texte</label>
                     <input type="text" class="form-control" id="text" placeholder="un texte ici">
@@ -87,9 +92,10 @@
                 <button type="submit" class="btn btn-default">Envoyer</button>
             </form>
 
-            <h1>input-group, input-group-addon et input-group-btn</h1>
+
 
             <form class="form-inline">
+                <h1>input-group, input-group-addon et input-group-btn</h1>
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon">€</span>
@@ -114,9 +120,10 @@
                 </div>
             </form>
 
-            <h1>accoler un bouton à un control</h1>
+
 
             <form class="form-inline">
+                <h1>accoler un bouton à un control</h1>
                 <div class="input-group col-lg-3">
                     <input type="text" class="form-control" style="text-align:right" value="10 000">
                     <span class="input-group-btn">
@@ -134,6 +141,120 @@
                     </span>
                 </div>
             </form>
+            <br>
+
+            <h1>Accoler une case à cocher ou un bouton radio à un contrôle</h1>
+
+            <div class="input-group">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="checkbox">
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="radio">
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <h1>Dimonsion des contrôles</h1>
+
+            <div class="col-lg-3 ">
+                <input type="text" class="form-control input-sm" value="Petit">
+                <input type="text" class="form-control" value="Normal">
+                <input type="text" class="form-control input-lg" value="Grand">
+            </div>
+
+
+
+            <form class="col-lg-10">
+                <h1>Stylisation selon l'état</h1>
+                <fieldset>
+                    <legend>Validation, erreur et succès</legend>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="idError">Erreur</label>
+                        <input type="text" class="form-control" id="idError">
+                        <span class="help-block">Corrigez l'erreur s'il vous plait</span>
+                    </div>
+                    <div class="form-group has-warning">
+                        <label class="control-label" for="idWarning">Avertissement</label>
+                        <input type="text" class="form-control" id="idWarning">
+                        <span class="help-block">Il y a un problème dans la saise</span>
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label" for="idSuccess">Réussite</label>
+                        <input type="text" class="form-control" id="idSuccess">
+                        <span class="help-block">Saisie correcte</span>
+                    </div>
+                </fieldset>
+            </form>
+
+
+
+            <form class="col-lg-10">
+                <h1>Avec icon</h1>
+
+                <!--    Les icônes dans les contrôles ne fonctionnent que pour les balises input
+                qui comportent la classe form-control.  -->
+
+                <fieldset>
+                    <legend>Validation, erreur et succès</legend>
+                    <div class="form-group has-error has-feedback"> <!-- Ajout pour placer l'icon -->
+                        <label class="control-label" for="idError">Erreur</label>
+                        <input type="text" class="form-control" id="idError">
+                        <span class="glyphicon glyphicon-remove form-control-feedback"></span> <!-- ICON -->
+                        <span class="help-block">Corrigez l'erreur s'il vous plait</span>
+                    </div>
+                    <div class="form-group has-warning has-feedback"> <!-- Ajout pour placer l'icon -->
+                        <label class="control-label" for="idWarning">Avertissement</label>
+                        <input type="text" class="form-control" id="idWarning">
+                        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span> <!-- ICON -->
+                        <span class="help-block">Il y a un problème dans la saise</span>
+                    </div>
+                    <div class="form-group has-success has-feedback"> <!-- Ajout pour placer l'icon -->
+                        <label class="control-label" for="idSuccess">Réussite</label>
+                        <input type="text" class="form-control" id="idSuccess">
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span> <!-- ICON -->
+                        <span class="help-block">Saisie correcte</span>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="col-lg-4">
+                <form class="form-inline well">
+                    <div class="form-group">
+                        <label class="sr-only" for="text">Saisie</label>
+                        <input id="text" type="text" class="form-control" placeholder="Texte ici">
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right">Envoyer</button>
+                    <div class="alert alert-blck alert-danger" style="display:none">
+                        <h4>Erreur</h4>
+                        Vous devez entrer au moins 4caractères!
+                    </div>
+                </form>
+            </div>
+            <script src="../../JS/jquery-min.js"></script>
+            <script>
+            $(function () {
+                $("form").on("submit", function(){
+                    if($("input").val().length < 4){
+                        $("div.form-group").addClass("has-error");
+                        $("div.alert").show("slow").delay(4000).hide("slow");
+                        return false;
+                    }
+                });
+            });
+            </script>
+
             <hr>
         </div>  <!--    container  -->
     </body>
