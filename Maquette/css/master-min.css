@@ -1,42 +1,104 @@
 body{
     font-family: 'Exo', sans-serif;
 }
-.bg{
+h3{
+    font-size: 20px;
+    color: #fb6d6d;
+}
+
+h2{
+    font-size: 40px;
+}
+
+.page-header{
     height: 100vh;
     background-image: url(/images/clouds.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-.page-header{
     text-align: center;
     min-width: 100%;
     height: 100vh;
-    margin-top: 0px;
+    margin: 0px -15px 0px -15px;
 }
+/*inside the header*/
 .top{
     position: relative;
     top: calc(100vh - 75%);
 }
+
 .bigTitle{
     font-size: 4em;
     font-weight: 100;
 }
+
 .play{
+    cursor: pointer;
     margin-top: 50px;
     margin-bottom: 40px;
 }
-.play img{
-    opacity: 0.5;
-    cursor: pointer;
-}
-.play img:hover{
-    opacity: 1;
-}
-.button{
-    line-height:1.8;
-    font-weight: 100;
-}
+
 .help{
     font-size: 0.7em;
+}
+
+/*  section 1   */
+.part1{
+    height: 720px;
+}
+
+.part1 span{
+    color: #fb6d6d;
+}
+
+.boiteText{
+    position: relative;
+    top: 25%;
+}
+
+.boiteGrise{
+    background-color: #ececec;
+    height: 720px;
+    overflow: hidden;
+}
+
+.triangle{
+    height: 720px;
+    background-color: #fb8686;
+    width: 100%;
+    position: absolute;
+    bottom: -340px;
+    right: -150px;
+    transform: rotate(49deg);
+}
+
+/*  section2    */
+
+.part2{
+    height: 675px;
+    margin: 0px -15px 0px -15px;
+    background-color: #f6f5f3;
+    position: relative;
+    overflow: hidden;
+}
+.pen{
+    position: absolute;
+    top: -15px;
+}
+
+.earphones{
+    position: absolute;
+    top: -30px;
+    right: 100px;
+}
+
+.coffee{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+
+.titleBox{
+    text-align: center;
+    padding-top: 130px;
 }

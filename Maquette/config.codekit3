@@ -45,6 +45,30 @@
 		"oA": 0,
 		"oAP": "\/images\/clouds.jpg",
 		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/coffee.png": {
+		"ft": 32768,
+		"iS": 40333,
+		"oA": 0,
+		"oAP": "\/images\/coffee.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/earphones.png": {
+		"ft": 32768,
+		"iS": 59515,
+		"oA": 0,
+		"oAP": "\/images\/earphones.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/pens.png": {
+		"ft": 32768,
+		"iS": 77869,
+		"oA": 0,
+		"oAP": "\/images\/pens.png",
+		"oF": 0,
 		"opt": 0
 		},
 	"\/images\/play.png": {
