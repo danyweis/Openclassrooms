@@ -83,7 +83,7 @@ h2{
 /*  section2    */
 
 .part2{
-    height: 675px;
+    min-height: 675px;
     margin: 0px -15px 0px -15px;
     background-color: #f6f5f3;
     position: relative;
@@ -113,4 +113,56 @@ h2{
 .iconText{
     margin-top: 90px;
     text-align: center;
+}
+
+/*  section 3   */
+
+.part3{
+    height: 550px;
+}
+.part3 span{
+    color: #fb6d6d;
+    position: relative;
+}
+
+.macbookSection{
+    height: 550px;
+    overflow: hidden;
+}
+.rouge{
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    left: -170px;
+    background-color: #fb8686;
+    transform: rotate(-40deg);
+    z-index: 50;
+}
+.macbook{
+    position: absolute;
+    z-index: 100;
+    margin-top: 100px;
+}
+.macbookText{
+    margin-top: 100px;
+}
+
+/*  section 4   */
+.part4{
+    height: 640px;
+    background-color: #000000;
+    background-image: url(/images/bgBlack.png);
+    text-align: center;
+    color: #ffffff;
+}
+
+.part4 span{
+    color: #fb6d6d;
+}
+
+.imgMoi{
+    margin-top: 110px;
+    margin-bottom: 25px;
+    width: 75px;
+    height: 75px;
 }

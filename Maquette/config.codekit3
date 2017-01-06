@@ -47,6 +47,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/bgBlack.png": {
+		"ft": 32768,
+		"iS": 328693,
+		"oA": 0,
+		"oAP": "\/images\/bgBlack.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/bulb.png": {
 		"ft": 32768,
 		"iS": 7612,
@@ -76,6 +84,30 @@
 		"iS": 59515,
 		"oA": 0,
 		"oAP": "\/images\/earphones.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/macbook.png": {
+		"ft": 32768,
+		"iS": 53384,
+		"oA": 0,
+		"oAP": "\/images\/macbook.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/moi.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/moi.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/moi.png": {
+		"ft": 32768,
+		"iS": 25302,
+		"oA": 0,
+		"oAP": "\/images\/moi.png",
 		"oF": 0,
 		"opt": 0
 		},
