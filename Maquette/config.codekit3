@@ -39,6 +39,22 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/images\/airplane.png": {
+		"ft": 32768,
+		"iS": 7682,
+		"oA": 0,
+		"oAP": "\/images\/airplane.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/bulb.png": {
+		"ft": 32768,
+		"iS": 7612,
+		"oA": 0,
+		"oAP": "\/images\/bulb.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/clouds.jpg": {
 		"ft": 16384,
 		"iS": 860623,
@@ -68,6 +84,14 @@
 		"iS": 77869,
 		"oA": 0,
 		"oAP": "\/images\/pens.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/picture.png": {
+		"ft": 32768,
+		"iS": 7194,
+		"oA": 0,
+		"oAP": "\/images\/picture.png",
 		"oF": 0,
 		"opt": 0
 		},
