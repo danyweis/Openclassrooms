@@ -10,6 +10,10 @@ h3{
 h2{
     font-size: 37px;
 }
+h6{
+    font-weight: bold;
+    font-size: 15px;
+}
 
 .container{
     box-shadow: 0 0 25px #777a89;
@@ -226,5 +230,28 @@ h2{
 
 .terms span{
     text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*  section footer  */
+
+footer{
+    height: 330px;
+}
+footer img{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+footer h6{
+    margin-top: 100px;
+}
+
+footer p{
+    font-size: 10px;
+}
+
+footer a{
+    color: #000000;
     cursor: pointer;
 }

@@ -183,6 +183,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/startEx.png": {
+		"ft": 32768,
+		"iS": 4552,
+		"oA": 0,
+		"oAP": "\/images\/startEx.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
