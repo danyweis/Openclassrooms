@@ -3,22 +3,31 @@
     <head>
         <meta charset="utf-8">
         <title>TP Openclassrooms</title>
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-
+        <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/master.css">
         <link href="https://fonts.googleapis.com/css?family=Exo:100,200,400" rel="stylesheet">
     </head>
-    <body>
-            <div class="container">
 
-                <header class="page-header">
-                    <div class="top">
+
+
+    <body>
+
+
+<!--    SECTION HEADER  -->
+
+
+        <div class="bgHeader">
+            <div class="container">
+                <header class="header">
+                    <div class="headerContent">
                         <div class="row">
                             <h1 class="col-xs-12 col-md-offset-2 col-md-8 bigTitle"> There is no other<br>platforms for you as like</h1>
                         </div>
                         <div class="row">
-                            <div class="col-xs-offset-5 col-xs-2 play">
-                                <img src="/images/play.png" alt="play button">
+                            <div class="col-xs-offset-5 col-xs-2">
+                                <button class="btn-lg playButton">
+                                    <span class="glyphicon glyphicon-play"> </span>
+                                </button>
                             </div>
                         </div>
                         <div class="row">
@@ -29,11 +38,23 @@
                         </div>
                     </div>
                 </header>
+            </div>  <!--CONTAINER-->
+        </div>
 
 
-                <section class="row part1">
+<!--    SECTION 1   -->
+
+
+        <div class="bgSection1">
+            <div class="hidden-sm hidden-xs boxRight">
+                <div class="section1Triangle">
+                    <!-- TRIANGLE -->
+                </div>
+            </div>
+            <div class="container">
+                <section class="row section1">
                     <div>
-                        <div class="col-xs-offset-1 col-xs-10 col-md-5 boiteText">
+                        <div class="col-xs-offset-1 col-xs-10 col-md-5 textBoxSection1">
                             <h3>NEW DESIGN</h3>
                             <h2>There is no other platforms for you ass like <span>....</span></h2>
                             <br>
@@ -42,24 +63,25 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                    <div class="hidden-xs hidden-sm col-md-offset-1 col-md-5 boiteGrise">
-                        <div class="triangle">
-                            <!-- Triangle rouge -->
-                        </div>
-                    </div>
                 </section>
+            </div> <!--CONTAINER-->
+        </div>
 
 
+<!--    SECTION FEATURES    -->
 
-                <section class="part2">
+
+        <div class="bgFeatures">
+            <div class="container">
+                <section class="sectionFeatures">
                     <div class="hidden-xs hidden-sm pen">
-                        <img src="/images/pens.png" alt="">
+                        <img src="/images/pens.png" alt="pens">
                     </div>
                     <div class="hidden-xs hidden-sm earphones">
-                        <img src="/images/earphones.png" alt="">
+                        <img src="/images/earphones.png" alt="earphones">
                     </div>
                     <div class="coffee">
-                        <img src="/images/coffee.png" alt="">
+                        <img src="/images/coffee.png" alt="Cup of coffee">
                     </div>
                     <div class="row titleBox">
                         <h3>NEW FEATUERS</h3>
@@ -67,22 +89,22 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-4">
-                            <div class="iconText">
-                                <img src="/images/picture.png" alt="icon picture">
+                            <div class="iconFeatures">
+                                <img src="/images/picture.png" class="iconPicture"alt="icon picture">
                                 <h4>Some awesone features</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-4">
-                            <div class="iconText">
-                                <img src="/images/airplane.png" alt="icon airplane">
+                            <div class="iconFeatures">
+                                <img src="/images/airplane.png" class="iconAirplane"alt="icon airplane">
                                 <h4>Some awesone features</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-4">
-                            <div class="iconText">
-                                <img src="/images/bulb.png" alt="icon bulb">
+                            <div class="iconFeatures">
+                                <img src="/images/bulb.png" class="iconBulb"alt="icon bulb">
                                 <h4>Some awesone features</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
@@ -90,20 +112,24 @@
 
                     </div>
                 </section>
+            </div> <!--CONTAINER-->
+        </div>
 
 
+<!--    SECTION MACBOOK   -->
 
-                <section class="part3">
+
+        <div class="hidden-sm hidden-xs bgMacbook">
+            <div class="macbookTriangle">
+                <!-- TRIANGLE -->
+            </div>
+            <div >
+                <img src="/images/macbook.png" class="macbook" alt="macbook">
+            </div>
+            <div class="container">
+                <section class="sectionMacbook">
                     <div class="row">
-                        <div class="hidden-xs hidden-sm macbook">
-                            <img src="/images/macbook.png" alt="macbook">
-                        </div>
-                        <div class="hidden-xs hidden-sm col-md-7 macbookSection">
-                            <div class="rouge">
-
-                            </div>
-                        </div>
-                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-4 macbookText">
+                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-7 col-md-4 textBoxMacbook">
                             <h3>NEW DESIGN</h3>
                             <h2>Responsive design,just need your tap <span>....</span></h2>
                             <br>
@@ -111,10 +137,16 @@
                         </div>
                     </div>
                 </section>
+            </div> <!--CONTAINER-->
+        </div>
 
 
+<!--    SECTION FOUNDER   -->
 
-                <section class="part4">
+
+        <div class="bgFounder">
+            <div class="container">
+                <section class="sectionFounder">
                     <div class="row">
                         <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-4">
                             <img src="/images/moi.png" class="imgMoi" alt="">
@@ -156,17 +188,22 @@
                         </div>
                     </div>
                 </section>
+            </div> <!--CONTAINER-->
+        </div>
 
 
+<!--    SECTION BROWSER   -->
 
-                <section class="part5">
+
+        <div class="bgBrowser">
+            <div class="container">
+                <section class="sectionBrowser">
                     <div class="row">
-                        <div class="col-xs-offset-3 col-xs-6 safariText">
+                        <div class="col-xs-offset-3 col-xs-6 textBoxSafari">
                             <h3>NEW FEATURES</h3>
                             <h2>Some awesone features</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
-
                     </div>
                     <div class="row">
                         <div class="col-xs-offset-2 col-xs-8 browser">
@@ -174,81 +211,95 @@
                         </div>
                     </div>
                 </section>
+            </div> <!--CONTAINER-->
+        </div>
 
 
+<!--    SECTION FOOTER   -->
 
-                <section class="contact">
+
+        <div class="bgContact">
+            <div class="container">
+                <section class="sectionContact">
                     <div class="row">
                         <div class="col-xs-offset-3 col-xs-6">
                             <h3>NEW FEATURES</h3>
                             <h2>Over 1000 designers are using ...</h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="hidden-xs hidden-sm col-md-offset-9 col-md-3 trial">
-                            <p><span>⤹</span> 30 days free trial for all.</p>
-                        </div>
-                    </div>
                     <div class="row ">
                         <form class="form-inline" action="index.html" method="post">
-
-
-                            <div class="col-md-3 formulaire">
+                            <div class="col-md-3 formContact">
                                 <label class="sr-only"for="name"></label>
                                 <input type="text" class="form-control" id="name" placeholder="FULL NAME">
                             </div>
-                            <div class="col-md-3 formulaire">
+                            <div class="col-md-3 formContact">
                                 <label class="sr-only"for="email"></label>
                                 <input type="text" class="form-control" id="email" placeholder="YOUR EMAIL">
                             </div>
-                            <div class="col-md-3 formulaire">
+                            <div class="col-md-3 formContact">
                                 <label class="sr-only"for="password"></label>
                                 <input type="text" class="form-control" id="password" placeholder="PASSWORD">
                             </div>
-
-                            <div class="col-md-3 formulaire">
+                            <div class="col-sm-offset-4 col-sm-4 col-md-offset-0 col-md-3 formContact"><p><span>⤹</span> 30 days free trial for all.</p>
                                 <button type="submit" class="btn btn-danger btn-block button"name="button">TRY NOW</button>
                             </div>
                         </form>
                     </div>
                     <div class="row">
-                        <div class="col-xs-offset-3 col-xs-6 terms">
+                        <div class="col-xs-offset-3 col-xs-6 termsContact">
                             <p>By sining up you agree to our <span>terms & Services</span></p>
                         </div>
                     </div>
-
                 </section>
-                <footer>
+            </div> <!--CONTAINER-->
+        </div>
 
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img src="/images/startEx.png" alt="startEx logo"><br>
-                        <p>Anenean lebanaed bibinde rulla sed <br>
-                        constren Anenean eu ter quam <br>
-                        USA & CAN: 1-234-567-8901 <br>
-                        Adress: 34 Brokel Rd NY</p>
-                    </div>
-                    <div class="col-xs-2">
-                        <h6>Support</h6>
-                        <p><a href="#">Help Center</a><br>
-                        <a href="#">Get Started</a><br>
-                        <a href="#">Contact Us</a></p>
-                    </div>
-                    <div class="col-xs-2">
-                        <h6>About Us</h6>
-                        <p><a href="#">About Us</a><br>
-                        <a href="#">Terms of Use</a><br>
-                        <a href="#">Privacy Policy</a></p>
-                    </div>
-                    <div class="col-xs-3">
-                        <h6>Get Newsletter</h6>
 
-                    </div>
-                </div>
-                <div class="footerTriangle">
+<!--SECTION FOOTER  -->
 
-                </div>
+
+        <div class="bgFooter">
+            <div class="footerTriangle">
+                <!-- TRIANGLE -->
+            </div>
+            <div class="container">
+                <footer class="footerContent">
+                    <div class="row">
+                        <div class="col-xs-4 col-md-3">
+                            <img src="/images/startEx.png" alt="startEx logo"><br>
+                            <p>Anenean lebanaed bibinde rulla sed <br>
+                            constren Anenean eu ter quam <br>
+                            USA & CAN: 1-234-567-8901 <br>
+                            Adress: 34 Brokel Rd NY</p>
+                        </div>
+                        <div class="col-xs-3 col-md-2">
+                            <h6>Support</h6>
+                            <p><a href="#">Help Center</a><br>
+                            <a href="#">Get Started</a><br>
+                            <a href="#">Contact Us</a></p>
+                        </div>
+                        <div class="col-xs-3 col-md-2">
+                            <h6>About Us</h6>
+                            <p><a href="#">About Us</a><br>
+                            <a href="#">Terms of Use</a><br>
+                            <a href="#">Privacy Policy</a></p>
+                        </div>
+                        <div class="col-xs-4 col-md-3">
+                            <h6>Get Newsletter</h6>
+                            <form class="form-inline boiteMail">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="newsletter" placeholder="EMAIL">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="submit"><span class="glyphicon glyphicon-send"> </span></button></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </footer>
-            </div><!--container-->
+            </div> <!--CONTAINER-->
+        </div>
+
+
     </body>
 </html>

@@ -1,5 +1,8 @@
+/*  general */
+
 body{
     font-family: 'Exo', sans-serif;
+    margin: 0;
 }
 
 h3{
@@ -10,32 +13,30 @@ h3{
 h2{
     font-size: 37px;
 }
+
 h6{
     font-weight: bold;
     font-size: 15px;
 }
 
 .container{
-    box-shadow: 0 0 25px #777a89;
+    position: relative;
 }
 
-.page-header{
+/*****  section header  *****/
+
+.bgHeader{
     height: 100vh;
     background-image: url(/images/clouds.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     text-align: center;
-    min-width: 100%;
-    height: 100vh;
-    margin: 0px -15px 0px -15px;
 }
 
-/*inside the header*/
-
-.top{
+.headerContent{
     position: relative;
-    top: calc(100vh - 75%);
+    margin-top: 25%;
 }
 
 .bigTitle{
@@ -43,52 +44,73 @@ h6{
     font-weight: 100;
 }
 
-.play{
+.playButton{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    opacity: 0.8;
     cursor: pointer;
     margin-top: 50px;
     margin-bottom: 40px;
+    background-color: #8185a3;
+    color: #f6f5f3;
+    border: none;
+}
+
+.playButton:hover{
+    opacity: 1;
+    box-shadow: -1px -1px 6px #4e4e5e inset;
 }
 
 .help{
     font-size: 0.7em;
 }
 
-/*  section 1   */
+/*****  section 1   *****/
 
-.part1{
+.bgSection1{
     max-height: 720px;
 }
 
-.part1 span{
-    color: #fb6d6d;
-}
-
-.boiteText{
-    margin-top: 50px;
-}
-
-.boiteGrise{
+.boxRight{
     background-color: #ececec;
     height: 720px;
+    width: 50%;
+    float: right;
+    position: relative;
     overflow: hidden;
 }
 
-.triangle{
-    height: 720px;
+.section1Triangle{
+    height: 200%;
     background-color: #fb8686;
     width: 100%;
-    position: absolute;
-    bottom: -340px;
-    right: -150px;
-    transform: rotate(49deg);
+    transform: skewX(-45deg);
 }
 
-/*  section2    */
+.section1{
+    max-height: 720px;
+    z-index: 2;
+}
 
-.part2{
-    min-height: 675px;
-    margin: 0px -15px 0px -15px;
+.section1 span{
+    color: #fb6d6d;
+    position: absolute;
+}
+
+.textBoxSection1{
+    margin-top: 50px;
+}
+
+/*****  section features    *****/
+
+.bgFeatures{
     background-color: #f6f5f3;
+    min-height: 675px;
+}
+
+.sectionFeatures{
+    min-height: 675px;
     position: relative;
     overflow: hidden;
 }
@@ -113,54 +135,66 @@ h6{
     text-align: center;
     padding-top: 130px;
 }
-.iconText{
+
+.iconFeatures{
     margin-top: 90px;
     text-align: center;
 }
 
-/*  section 3   */
-
-.part3{
-    max-height: 550px;
-}
-.part3 span{
-    color: #fb6d6d;
-    position: relative;
+.iconPicture, .iconAirplane, .iconBulb{
+    margin-bottom: 20px;
 }
 
-.macbookSection{
+/*****  section macbook   *****/
+
+.bgMacbook{
     height: 550px;
+    position: relative;
     overflow: hidden;
 }
-.rouge{
+
+.macbookTriangle{
     height: 1000px;
-    width: 100%;
+    width: 50%;
     position: absolute;
     left: -170px;
     background-color: #fb8686;
-    transform: rotate(-40deg);
-    z-index: 50;
+    transform: skewX(44deg);
 }
+
 .macbook{
     position: absolute;
     z-index: 100;
     margin-top: 100px;
+    max-width: 60%;
 }
-.macbookText{
+
+.sectionMacbook{
+    max-height: 550px;
+}
+
+.sectionMacbook span{
+    color: #fb6d6d;
+    position: relative;
+}
+
+.textBoxMacbook{
     margin-top: 100px;
 }
 
-/*  section 4   */
-.part4{
-    min-height: 640px;
+/*****  section founder   *****/
+
+.bgFounder{
     background-color: #000000;
+    min-height: 640px;
     background-image: url(/images/bgBlack.png);
+}
+.sectionFounder{
     text-align: center;
     color: #ffffff;
-    margin: 0 -15px 0 -15px;
 }
 
-.part4 span{
+.sectionFounder span{
     color: #fb6d6d;
 }
 
@@ -170,21 +204,27 @@ h6{
     width: 75px;
     height: 75px;
 }
+
 .logos{
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .logos img{
     max-width: 100%;
 }
 
-/*  section 5   */
-.part5{
+/*****  section browser   *****/
+
+.bgBrowser{
     background-color: #f6f5f3;
-    text-align: center;
-    margin: 0 -15px 0 -15px;
 }
-.safariText{
+
+.sectionBrowser{
+    text-align: center;
+}
+
+.textBoxSafari{
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -193,65 +233,91 @@ h6{
     max-width: 100%;
 }
 
+/*****  section contact *****/
 
-/* section 6  contact*/
+.bgContact{
+    background-color: #323969;
+}
 
-.contact{
+.sectionContact{
     padding-top: 50px;
     min-height: 465px;
-    background-color: #323969;
-    margin: 0 -15px 0 -15px;
     text-align: center;
     color: #f6f5f3;
 }
-.trial{
-    margin-top: 25px;
-    position: relative;
 
+.formContact{
+    position: relative;
+    margin-top: 40px;
+    padding: 0 30px;
+    text-align: center;
 }
-.trial span{
+
+.formContact p{
     position: absolute;
-    top: 10px;
+    bottom: 40px;
+}
+
+.formContact span{
+    position: absolute;
+    top: 11px;
     left: 10px;
     transform: rotate(-30deg);
     font-size: 40px;
 }
 
-.formulaire{
-    margin-top: 40px;
-    padding: 0 30px;
-
-}
-.terms{
+.termsContact{
     font-size: 12px;
     margin-top: 50px;
+    margin-bottom: 20px;
     font-weight: lighter;
 }
 
-.terms span{
+.termsContact span{
     text-decoration: underline;
     cursor: pointer;
 }
 
+/*****  section footer  *****/
 
-/*  section footer  */
-
-footer{
-    height: 330px;
+.bgFooter{
+    position: relative;
+    overflow: hidden;
 }
-footer img{
+
+.footerContent{
+    min-height: 330px;
+    position: relative;
+    padding-left: 15px;
+    overflow: hidden;
+}
+.footerContent img{
     margin-top: 70px;
     margin-bottom: 10px;
 }
-footer h6{
+.footerContent h6{
     margin-top: 100px;
 }
 
-footer p{
+.footerContent p{
     font-size: 10px;
 }
 
-footer a{
+.footerContent a{
     color: #000000;
     cursor: pointer;
+}
+
+.boiteMail{
+    margin-bottom: 20px;
+}
+
+.footerTriangle{
+    height: 200px;
+    width: 200px;
+    background-color: #fb6d6d;
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    transform: skewY(45deg);
 }
