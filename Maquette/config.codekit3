@@ -134,23 +134,23 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/css\/master-min.css": {
+	"\/css\/style-min.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/css\/master-min-min.css",
+		"oAP": "\/css\/style-min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/css\/master.css": {
+	"\/css\/style.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/css\/master-min.css",
+		"oAP": "\/css\/style-min.css",
 		"oF": 0,
 		"oS": 0
 		},
