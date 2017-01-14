@@ -1,0 +1,22 @@
+Bonjour 
+jai choisi le theme Agama parce que j’aime beaucoup les page avec des héros picture de taille  de la fenêtre du browser.
+
+première chose que j’ai fais c’est de créer le menu de navigation supérieur puis j’ai charger l’icon favicon et le logo de ma page.
+
+Puis j’ai commencé à changer les photos du slider et la couleur du bouton principale.
+
+J’ai enlever les front page boxes .
+
+Après j’ai créé le menu dans le footer et j’ai ajouté les donnés de contact comme aussi le calendrier.
+
+après j’ai fait la recherche d’un calendrier et de l’intégrer 
+(j’ai choisi Spiffy Calendar avec 5 étoiles et +3000 actives) 
+et j’ai ajouté un form de contact
+
+dans le CSS j’ai changer la font weight de 300 à 100 et la color de h1 je suis passer de #222222 à #333335
+
+et à la fin j’ai ajouter les articles sur la page
+
+Merci et bonne journée 
+
+bonne chance pour la suite
