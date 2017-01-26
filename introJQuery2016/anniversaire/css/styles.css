@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+}
+.card{
+    width:700px;
+    height: 900px;
+    background-color: turquoise;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+h1{
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 25px auto;
+    padding: 25px;
+    width: 400px;
+    background-color: #FFF48D;
+}
+
+#clickMe{
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.item1, .item2, .item3{
+    display:none;
+    width: 300px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 50px auto;
+    font-size: 25px;
+    color: white;
+}
+
+.item1{
+    background-color: #DF6D14;
+}
+.item2{
+    background-color: #D90115;
+}
+.item3{
+    background-color: #800080;
+}
