@@ -1,7 +1,7 @@
 var radius = prompt("Donnez moi le radius d'un cercle :");
 
 function perimetre(radius) {
-  var perim = " Le perimetre d'un cercle avec " + radius + " fait " + (radius * Math.PI) + " !";
+  var perim = " Le perimetre d'un cercle avec " + radius + " fait " + ((radius + radius) * Math.PI) + " !";
   return  perim;
 }
 
