@@ -1,6 +1,6 @@
 // jeu de rôle multijoueur
 
-var perso = {
+/*var perso = {
   nom: "Aurora",
   sante: 150,
   force: 25,
@@ -156,10 +156,10 @@ Hero.decrire = function () {
 };
 
 
-var Adversaire = Object.create(LesPersonnages);
+var Adversaires = Object.create(LesPersonnages);
 
 // Initialise les Adversaire
-Adversaire.initAdversaire = function(nom, sante, force, race, valeur) {
+Adversaires.initAdversaires = function (nom, sante, force, race, valeur) {
   this.initPerso(nom, sante, force);
   this.race = race;
   this.valeur = valeur;
@@ -191,8 +191,8 @@ console.log(hero1.decrire());
 console.log(hero2.decrire());
 
 
-var monster1 = Object.create(Adversaire);
-monster1.initAdversaire("Zogzog", 40, 20, "orc", 10);
+var monster1 = Object.create(Adversaires);
+monster1.initAdversaires("Zogzog", 40, 20, "orc", 10);
 
 console.log("Un affreux monstre arrive : c'est un " + monster1.race + " nommé " + monster1.nom);
 
@@ -212,7 +212,7 @@ console.log("************************");
 //             *******
 //              *****
 //               ***
-//                *
+//                */
 //
 
 var Personnage = {
@@ -224,11 +224,11 @@ var Personnage = {
 
   // Attaque un personnage cible
   attaquer: function (cible) {
-    if (this.sante > 0){
+    if (this.sante >= 0){
       var degats = this.force;
       console.log(this.nom + " attaque " + cible.nom + " et lui fait " + degats + " points de dégâts");
       cible.sante = cible.sante - degats;
-      if (cible.sante > 0){
+      if (cible.sante >= 0){
         console.log(cible.nom + " a encore " + cible.sante + " de points de vie");
       } else {
         cible.sante = 0;
@@ -263,14 +263,11 @@ Joueur.decrire = function () {
 // une erreure ici quelque par
 
 
-
-
-
-Joueur.combattre = function(adversaire) {
+Joueur.combattre = function (adversaire) {
   this.attaquer(adversaire);
-  if (adversaire.sante === 0){
+  if (adversaire.sante === 0) {
     console.log(this.nom + " a tué " + adversaire.nom + " et gagne " + adversaire.valeur + " points d'expérience");
-    this.xp = this.xp + adversaire.valeur;
+    this.xp += adversaire.valeur;
   }
 };
 
@@ -312,8 +309,8 @@ console.log("Un affreux monstre arrive : c'est un " + monstre.race + " nommé " 
 monstre.attaquer(joueur1);
 monstre.attaquer(joueur2);
 
-joueur1.attaquer(monstre);
-joueur2.attaquer(monstre);
+joueur1.combattre(monstre);
+joueur2.combattre(monstre);
 
 console.log(joueur1.decrire());
 console.log(joueur2.decrire());
