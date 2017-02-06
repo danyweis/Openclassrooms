@@ -198,6 +198,7 @@ console.log("Un affreux monstre arrive : c'est un " + monster1.race + " nommé "
 
 
 //
+console.log("************************");
 //
 //
 //        Le Jeu commence!!!!
@@ -225,16 +226,94 @@ var Personnage = {
   attaquer: function (cible) {
     if (this.sante > 0){
       var degats = this.force;
-      console.log(this.nom + "attaque " + cible.nom + "et lui fait " + degats + " points de dégâts");
+      console.log(this.nom + " attaque " + cible.nom + " et lui fait " + degats + " points de dégâts");
       cible.sante = cible.sante - degats;
       if (cible.sante > 0){
-        console.log(cible.nom + " a encore " + cible.sante + "de points de vie");
+        console.log(cible.nom + " a encore " + cible.sante + " de points de vie");
       } else {
         cible.sante = 0;
         console.log(cible.nom + " est mort");
       }
     } else{
-      console.log(this.nom + "ne peut pas attaquer : il est mort...");
+      console.log(this.nom + " ne peut pas attaquer : il est mort...");
     }
   }
 };
+
+// JOUEUR
+
+var Joueur = Object.create(Personnage);
+
+Joueur.initJoueur = function(nom, sante, force) {
+  this.initPerso(nom, sante, force);
+  this.xp = 0;
+};
+
+Joueur.decrire = function () {
+  var description = this.nom + " a " + this.sante + " points de vie, " + this.force + " de force et " + this.xp + " points d'expérience";
+  return description;
+};
+
+// Combattre un adversaire
+
+
+
+
+
+// une erreure ici quelque par
+
+
+
+
+
+Joueur.combattre = function(adversaire) {
+  this.attaquer(adversaire);
+  if (adversaire.sante === 0){
+    console.log(this.nom + " a tué " + adversaire.nom + " et gagne " + adversaire.valeur + " points d'expérience");
+    this.xp = this.xp + adversaire.valeur;
+  }
+};
+
+// ADVERSAIRE
+
+var Adversaire = Object.create(Personnage);
+
+Adversaire.initAdversaire = function(nom, sante, force, race, valeur) {
+  this.initPerso(nom, sante, force);
+  this.race = race;
+  this.valeur = valeur;
+};
+
+// CREATION DES HEROS
+
+var joueur1 = Object.create(Joueur);
+joueur1.initJoueur("Aurora", 150, 20);
+
+var joueur2 = Object.create(Joueur);
+joueur2.initJoueur("Glacius", 130, 30);
+
+// Presentation des heros
+
+console.log("Bienvenue dans ce jeu d'aventure! Voici nos courageux hérôs:");
+console.log(joueur1.decrire());
+console.log(joueur2.decrire());
+
+// CREATION DU MONSTRE
+
+var monstre = Object.create(Adversaire);
+monstre.initAdversaire("ZigZag", 40, 20, "orc", 10);
+
+// Presentation du monstre
+
+console.log("Un affreux monstre arrive : c'est un " + monstre.race + " nommé " + monstre.nom);
+
+// Le combat
+
+monstre.attaquer(joueur1);
+monstre.attaquer(joueur2);
+
+joueur1.attaquer(monstre);
+joueur2.attaquer(monstre);
+
+console.log(joueur1.decrire());
+console.log(joueur2.decrire());
