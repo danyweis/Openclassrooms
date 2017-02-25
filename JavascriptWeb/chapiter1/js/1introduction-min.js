@@ -1,0 +1,1 @@
+var h=document.head;console.log(h);var b=document.body;for(console.log(b),document.body.nodeType===document.ELEMENT_NODE?console.log("Body est un noeud élément"):console.log("Body est un noeud textuel"),i=0;i<document.body.childNodes.length;i++)console.log(document.body.childNodes[i]);var h1=document.body.childNodes[1];console.log(h1.parentNode),console.log(document.parentNode);
