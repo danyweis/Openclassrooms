@@ -57,11 +57,35 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/chapiter2\/html\/exerciceReve.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter2\/html\/exerciceReve.html",
+		"oF": 0
+		},
 	"\/chapiter2\/html\/parcourirDOM.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/chapiter2\/html\/parcourirDOM.html",
 		"oF": 0
+		},
+	"\/chapiter2\/js\/exerciceReve.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter2\/js\/exerciceReve-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter2\/js\/parcourirDOM-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter2\/js\/parcourirDOM-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/chapiter2\/js\/parcourirDOM.js": {
 		"ft": 64,
