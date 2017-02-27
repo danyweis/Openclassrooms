@@ -57,6 +57,12 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/chapiter2\/html\/exerciceAttribut.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter2\/html\/exerciceAttribut.html",
+		"oF": 0
+		},
 	"\/chapiter2\/html\/exerciceReve.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -68,6 +74,33 @@
 		"oA": 2,
 		"oAP": "\/chapiter2\/html\/parcourirDOM.html",
 		"oF": 0
+		},
+	"\/chapiter2\/js\/exerciceAttribut-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter2\/js\/exerciceAttribut-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter2\/js\/exerciceAttribut.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter2\/js\/exerciceAttribut-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter2\/js\/exerciceReve-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter2\/js\/exerciceReve-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/chapiter2\/js\/exerciceReve.js": {
 		"ft": 64,

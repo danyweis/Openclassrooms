@@ -24,7 +24,7 @@ console.log(document.getElementById("nouvelles"));
 
 // Sélection d'éléments à partir d'un sélecteur classe
 
-// Tous les éléments fils de l'élément d'identifiant "antiques" ayant la clesse "existe"
+// Tous les éléments fils de l'élément d'identifiant "antiques" ayant la classe "existe"
 console.log(document.getElementById("antiques").getElementsByClassName("existe").length);
 // Affiche 1
 

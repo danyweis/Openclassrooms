@@ -1,6 +1,10 @@
 // TODO: écrire la fonction compterElements
-
+function compterElements(selecteur) {
+    //var result = document.querySelectorAll(selecteur).length;
+    //return result;
+    return document.querySelectorAll(selecteur).length;
+}
 console.log(compterElements("p")); // Doit afficher 4
 console.log(compterElements(".adjectif")); // Doit afficher 3
 console.log(compterElements("p .adjectif")); // Doit afficher 3
-console.log(compterElements("p > .adjectif")); // Doit aficher 2
+console.log(compterElements("p > .adjectif")); // Doit afficher 2

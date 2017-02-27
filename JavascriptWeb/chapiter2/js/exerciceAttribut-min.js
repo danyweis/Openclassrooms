@@ -1,0 +1,1 @@
+function infoLiens(){var e=document.querySelectorAll("a");console.log(e.length),console.log(e.length.getAttribute("href"))}infoLiens();
