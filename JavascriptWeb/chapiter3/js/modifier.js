@@ -70,10 +70,43 @@ document.getElementById("langages").insertBefore(perlElt, document.getElementByI
 // une chaîne de caractères HTML qui représente le nouveau contenu à ajouter.
 // La position du nouveau contenu doit être une valeur parmi
 
-// - beforebegin : avant l'élément existant lui-même
-// - afterbegin : juste à l'intérieur de l'élément existant, avant son premier enfant
-// - beforeend : juste à l'intérieur de l'élément existant, après son dernier enfant
-// - afterend : après l'élément existant lui-même
+// - beforeBegin : avant l'élément existant lui-même
+// - afterBegin : juste à l'intérieur de l'élément existant, avant son premier enfant
+// - beforeEnd : juste à l'intérieur de l'élément existant, après son dernier enfant
+// - afterEnd : après l'élément existant lui-même
 
 // Ajout d'un élément au tout début de la liste
 document.getElementById('langages').insertAdjacentHTML("afterBegin", '<li id="javascript">JavaScript</li>');
+
+/* ==> REMPLACER OU SUPPRIMER UN NOEUD <== */
+
+/* ==> Remplacer un  noeud existant <== */
+
+// Le remplacement d'un élément du DOM par un autre s'effectue au moyen de la méthode "replaceChild"
+// Celle-ci remplace un noeud enfant de l'élément courant par un autre noeud.
+// Elle prend en paramètre (dans cet ordre) le nouveau noeud et celui qui est remplacé.
+var bashElt = document.createElement("li"); //creation d'un élément li
+bashElt.id = "bash"; // Définition de son identifiant
+bashElt.textContent= "Bash"; // Définition de son contenu textuel
+// Remplaceent de l'élément identifié par "perl" par le nouvel élément
+document.getElementById("langages").replaceChild(bashElt, document.getElementById("perl"));
+
+/* ==> Supprimer un noeud existant <== */
+
+// "removeChild" 
+
+// Suppression de l'élément identifié par "bash"
+document.getElementById("langages").removeChild(document.getElementById("bash"));
+
+
+// ==> EXERCICE <== //
+
+var paraElt = document.createElement("p");
+var lienElt = document.createElement("a");
+lienElt.href = "https://fr.wikipedia.org/wiki/Liste_des_langages_de_programmation";
+lienElt.textContent = "liste";
+console.log(lienElt);
+paraElt.appendChild(document.createTextNode("En voici une "));
+paraElt.appendChild(lienElt);
+paraElt.appendChild(document.createTextNode(" plus complète."));
+document.getElementById("contenu").appendChild(paraElt);
