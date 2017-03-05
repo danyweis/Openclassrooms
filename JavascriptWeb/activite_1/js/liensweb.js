@@ -26,46 +26,47 @@ var listeLiens = [
 
 // TODO : compléter ce fichier pour ajouter les liens à la page web
 
-// création des éléments
-
-var lienElt = document.createElement("span");
-var titreElt = document.createElement("h2");
-var urlElt = document.createElement("p");
-var auteurElt = document.createElement("p");
-var titreCouleur = "#428bca"
-// boucle qui chercher les infos
 
 for (var i = 0; i < listeLiens.length; i++) {
 
-    lienElt.setAttribute("class", "lien");
-    
+// Crátion du lien titre 
+var titreElt = document.createElement("a");
     titreElt.setAttribute("class", "titre");
     titreElt.href = listeLiens[i].url;
-    titreElt.textContent = listeLiens[i].titre;
-    
-   
+    titreElt.appendChild(document.createTextNode(listeLiens[i].titre));
+// CSS   
+    titreElt.style.color = "#428bca";
+    titreElt.style.textDecoration = "none";
 
-    //urlElt.textContent = titreElt.textContent + " " + listeLiens[i].url;
-    //urlElt.textContent =  listeLiens[i].url;
+// Création du span contien le lien
+var urlElt = document.createElement("span");
+    urlElt.appendChild(document.createTextNode(" " + listeLiens[i].url));
 
+// Création d'un titre h4 pour mettre mon titreElt et urlElt
+var titreBoxElt = document.createElement("h4");
+    titreBoxElt.appendChild(titreElt);
+    titreBoxElt.appendChild(urlElt);
+// CSS 
+    titreBoxElt.style.margin = "0px";
+
+// Création du span qui contien l'auteur
+var auteurElt = document.createElement("span");
     auteurElt.textContent = "Ajouté par " + listeLiens[i].auteur
-    var topElt = document.createElement("span");
-    topElt.textContent = titreElt + listeLiens[i].url;
-    lienElt.appendChild(topElt);
-    //lienElt.appendChild(titreElt);
-    //lienElt.appendChild(urlElt);
-    lienElt.appendChild(auteurElt);
+ 
+// Création de la div qui contien le contenu 
+var lienBoxElt = document.createElement("div");
+    lienBoxElt.setAttribute("class", "lien");
+    lienBoxElt.appendChild(titreBoxElt);
+    lienBoxElt.appendChild(auteurElt);
 
-    sendInfo(lienElt);
-
+// envoi de chaque div par tour de boucle
+document.getElementById("contenu").appendChild(lienBoxElt);
+   
 };
 
 
-function sendInfo(info) {
-document.getElementById("contenu").appendChild(lienElt);
-}
- 
-// CSS
 
-lienElt.style.display = "block"; 
-titreElt.style.color = titreCouleur;
+
+
+
+
