@@ -26,6 +26,7 @@ var stylePara = getComputedStyle(document.getElementById("para"));
 console.log(stylePara.fontStyle); // Affiche "italic"
 console.log(stylePara.color); // Affiche la couleur bleu en valeur RGB
 
+//console.log(getComputedStyle(document.getElementById("para")).color);
 
 // RESUME
 
