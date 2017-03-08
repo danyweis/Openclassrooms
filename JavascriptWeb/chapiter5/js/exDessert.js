@@ -1,60 +1,85 @@
+// MOI
+/*
 var boutonElt = document.querySelector("button");
 var list = document.getElementById("desserts");
 var dessert = "";
+var textInput = "";
+var okBtn = "";
 
-
-// input
-function inputElt(){
+// boutton pour ajout
+function bttn(){
+	textInput = document.createElement("input");
+	textInput.setAttribut = ("type", "text");
 	
-	var textInput = document.createElement("input");
-	var okBtn = document.createElement("button");
+	okBtn = document.createElement("button");
 	okBtn.id = "btn";
 	okBtn.textContent = "Send";
-	textInput.setAttribut = ("type", "text");
-	textInput.id = "la";
-	list.appendChild(textInput);
-	list.appendChild(okBtn);
-	okBtn.addEventListener("click", function(){
-		console.log("ok");
-		dessert = document.createElement("li");
-		dessert.textContent = textInput.value;
-		dessert.classList = "leDessert";
-		list.appendChild(dessert);
-		console.log(dessert);
-		list.removeChild(textInput);
-		list.removeChild(okBtn);
-	});
-	
-};
-//inputElt();
-
+}
 
 // Ajouter un dessert
 boutonElt.addEventListener("click", function() {
 	inputElt();
 });
 
+// input
+function inputElt() { 
+	bttn();
+	list.appendChild(textInput);
+	list.appendChild(okBtn);
+	
+	okBtn.addEventListener("click", function(){
+		
+		//console.log("ok");
+		dessert = document.createElement("li");
+		dessert.textContent = textInput.value;
+		dessert.classList = "leDessert";
+		
+		//console.log(dessert);
+		list.appendChild(dessert);
+		list.removeChild(textInput);
+		list.removeChild(okBtn);
+	});
+	
+};
 
 // Modifier un dessert
-/*
-document.getElementsByName(dessert).addEventListener("click", function() {
-	
-	console.log("ok");
-});*/
-/*test.addEventListener("click", function() {
-	
-	console.log("ok");
-});
-addEventListener("click", function () {
-	console.log("Gestionnaire paragraphe");
-});
 
+document.getElementById("desserts").addEventListener("click", function (e){
+	if (e.target && e.target.matches("li.leDessert")) {
+		bttn();
+		list.appendChild(textInput);
+		list.appendChild(okBtn);
+		okBtn.addEventListener("click", function(){
+		
+		//console.log("ok");
+		dessert = document.createElement("li");
+		dessert.textContent = textInput.value;
+		dessert.classList = "leDessert";
+		
+		//console.log(dessert);
+		list.replaceChild(dessert, e.target);
+		list.removeChild(textInput);
+		list.removeChild(okBtn);
+	});
+		//e.target
+	}
+});
 */
-var test = document.getElementsByClassName("leDessert");
 
-for (var i = 0; i<test.length; i++){
-	
-	test[i].addEventListener("click", function() {
-		console.log(test.length);
-	})
-}
+// OPC
+
+document.querySelector("button").addEventListener("click", function() {
+	var nomDessert = prompt("Entrez le nom de nouveau dessert :");
+
+	var dessertElt = document.createElement("li");
+	dessertElt.textContent = nomDessert;
+	dessertElt.addEventListener("click", function (e) {
+		var nouveauNom = prompt("Modifiez le nom du dessert : ", e.target.textContent);
+		e.target.textContent = nouveauNom;
+	});
+
+	document.getElementById("desserts").appendChild(dessertElt);
+});
+
+
+
