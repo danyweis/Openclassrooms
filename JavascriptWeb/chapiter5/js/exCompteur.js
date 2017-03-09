@@ -23,6 +23,6 @@ var compteurClics = 0;
 
 document.getElementById("clic").addEventListener("click", clic);
 
-document.getElementById("desactiver").addEventListener("click", function() {
+	document.getElementById("desactiver").addEventListener("click", function() {
 	document.getElementById("clic").removeEventListener("click", clic);
 });

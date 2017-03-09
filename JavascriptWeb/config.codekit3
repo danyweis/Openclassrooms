@@ -9,6 +9,31 @@
 	],
 "creatorBuild": "25568",
 "files": {
+	"\/activite_1\/css\/liensweb.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/activite_1\/css\/liensweb-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/activite_1\/html\/liensweb.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/activite_1\/html\/liensweb.html",
+		"oF": 0
+		},
+	"\/activite_1\/js\/liensweb.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/activite_1\/js\/liensweb-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/chapiter1\/html\/1introduction.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -125,6 +150,225 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/chapiter2\/js\/parcourirDOM-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter3\/html\/dictionnaire.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter3\/html\/dictionnaire.html",
+		"oF": 0
+		},
+	"\/chapiter3\/html\/journaux.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter3\/html\/journaux.html",
+		"oF": 0
+		},
+	"\/chapiter3\/html\/modifier.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter3\/html\/modifier.html",
+		"oF": 0
+		},
+	"\/chapiter3\/js\/dictionnaire.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter3\/js\/dictionnaire-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter3\/js\/journaux.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter3\/js\/journaux-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter3\/js\/modifier.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter3\/js\/modifier-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter4\/css\/infos.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/chapiter4\/css\/infos-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/chapiter4\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/chapiter4\/css\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/chapiter4\/html\/exCouleur.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter4\/html\/exCouleur.html",
+		"oF": 0
+		},
+	"\/chapiter4\/html\/infos.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter4\/html\/infos.html",
+		"oF": 0
+		},
+	"\/chapiter4\/html\/style.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter4\/html\/style.html",
+		"oF": 0
+		},
+	"\/chapiter4\/js\/exCouleur.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter4\/js\/exCouleur-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter4\/js\/infos.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter4\/js\/infos-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter4\/js\/style.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter4\/js\/style-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter5\/css\/evenement.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/chapiter5\/css\/evenement-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/chapiter5\/html\/evenement.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter5\/html\/evenement.html",
+		"oF": 0
+		},
+	"\/chapiter5\/html\/exCompteur.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter5\/html\/exCompteur.html",
+		"oF": 0
+		},
+	"\/chapiter5\/html\/exCouleur.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter5\/html\/exCouleur.html",
+		"oF": 0
+		},
+	"\/chapiter5\/html\/exDessert.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter5\/html\/exDessert.html",
+		"oF": 0
+		},
+	"\/chapiter5\/html\/plusLoin.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter5\/html\/plusLoin.html",
+		"oF": 0
+		},
+	"\/chapiter5\/html\/quiz.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter5\/html\/quiz.html",
+		"oF": 0
+		},
+	"\/chapiter5\/js\/evenement.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter5\/js\/evenement-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter5\/js\/exCompteur.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter5\/js\/exCompteur-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter5\/js\/exCouleur.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter5\/js\/exCouleur-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter5\/js\/exDessert.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter5\/js\/exDessert-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter5\/js\/plusLoin.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter5\/js\/plusLoin-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter5\/js\/quiz-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter5\/js\/quiz-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter5\/js\/quiz.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter5\/js\/quiz-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
