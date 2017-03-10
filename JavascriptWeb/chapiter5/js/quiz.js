@@ -14,8 +14,68 @@ var questions = [
 	}
 ];
 
-	
+// OPC
 
+var i = 1; // Pour numeroter les questions
+
+questions.forEach(function(question) {
+	// Titre de la question
+	var titreElt = document.createElement("strong");
+	titreElt.textContent = "Question " + i + " : ";
+
+	// Enoncé de la question (dans une balise <i>)
+	var textEnonceElt = document.createElement("i");
+	textEnonceElt.textContent = question.enonce;
+
+	// Enonce de la question
+	var enonceElt = document.createElement("div");
+	enonceElt.appendChild(titreElt);
+	enonceElt.appendChild(textEnonceElt);
+
+	// La zone de reponse contient initialement un bouton
+	var zoneReponseElt = document.createElement("div");
+	var boutonElt = document.createElement("button");
+	boutonElt.textContent = "Afficher la re'ponse";
+	zoneReponseElt.appendChild(boutonElt);
+
+	boutonElt.addEventListener("click", function() {
+		// remplacer le bouton par la reponse de la question
+		var reponseElt = document.createElement("div");
+		reponseElt.textContent = question.reponse;
+		zoneReponseElt.innerHTML = "";
+		zoneReponseElt.appendChild(reponseElt);
+	});
+
+	// La question regroupe lénonce et la zone de reponse
+	var questionElt = document.createElement("p");
+	questionElt.appendChild(enonceElt);
+	questionElt.appendChild(zoneReponseElt);
+	document.getElementById("contenu").appendChild(questionElt);
+
+	i++; 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MOI	
+/*
 for (var i = 0; i < questions.length; i++){
 	
 	var divs = document.createElement("div");
@@ -32,6 +92,7 @@ for (var i = 0; i < questions.length; i++){
 	questionText.textContent = questions[i].enonce;
 	reponse.textContent = questions[i].reponse;
 	bouton.textContent = "Afficher la réponse";
+	bouton.classList = "btn";
 
 	console.log(question.textContent);
 	console.log(questionText.textContent);
@@ -43,10 +104,25 @@ for (var i = 0; i < questions.length; i++){
 	divs.appendChild(bouton);
 	document.getElementById("contenu").appendChild(divs);
 
-	
-}
+	bouton.addEventListener("click", function(e) {
+		if (e.target && e.target.matches("button")) {
+			divs.replaceChild(reponse, e.target);
+		}
+		reponse = (reponse, e.target);
+		e.target.textContent = reponse;
+		//document.getElementById("contenu").appendChild(reponse);
+	console.log(e.target.textContent);
+	});
+
 
 bouton.addEventListener("click", function(e) {
-		document.getElementById("contenu").appendChild(reponse);
-	console.log(e.target);
-	});
+	console.log(e.type)
+})
+
+
+
+
+}
+
+
+*/
