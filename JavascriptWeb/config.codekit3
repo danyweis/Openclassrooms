@@ -381,6 +381,21 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/chapiter6\/html\/formulaire.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter6\/html\/formulaire.html",
+		"oF": 0
+		},
+	"\/chapiter6\/js\/formulaire.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter6\/js\/formulaire-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		}
 	},
 "hooks": [
@@ -390,7 +405,7 @@
 "projectAttributes": {
 	"creationDate": 509744488,
 	"displayValue": "JavascriptWeb",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-confession"
 	},
 "projectSettings": {
