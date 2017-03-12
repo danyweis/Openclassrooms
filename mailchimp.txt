@@ -1,0 +1,48 @@
+Bonjour dans cette activité j’ai trouvé comme erreur:
+
+- Dans l’objet de l’e-mail:
+
+   => DÉGUSTEZ VOTRE CUPCAKE GRATUIT !!! <==
+
+	- Le sujet n’est pas bien choisi 
+	- C’est écrit tout en MAJUSCULE
+	- Il y a le mot-clé gratuit (SPAM)
+	- Déjà un point d’exclamation n’est pas bien et ici il y on a trois
+
+
+- En haut de l’e-mail il n’y a pas de lien pour le visionner dans le navigateur
+
+
+- L’image Widgets Monthly
+	- L’image n’a pas d’attribut alt   
+
+
+- Dans notre première bloc de text(Nouveau glaçage vanille):
+
+   => Avez-vous goûté à notre strong>délicieux/strong> glaçage vanille ? <==
+	
+	- Il aurait fallu tester l’e-mail (l’envoyer à sois même) pour se rendre compte qu’il y a un problème dans le code HTML. La balise strong n’est pas bien écrit. Elle devrait être <strong>délicieux</strong>.  
+
+
+- Footer:
+
+   => Vous recevez ce message car nous avons acheté votre e-mail pour 5 centimes sur un site de partage d'e-mails. <==
+
+	- Déjà il faut éviter d’acheter une liste d’e-mail et si vraiment on achète une liste, ce qui est encore une fois vraiment vraiment déconseiller, alors on vas pas le dire comme ça.
+	- Il n’y a pas de lien de désinscription (ni dans le footer ni en haut du mail)
+	- C’est peut-être pas très bien si la société s’appelle ABC Spam ;) 
+
+
+- L’e-mail est beaucoup trop long
+
+
+- L’e-mail nest pas très joli, il n’y a pas d’images de cupcakes :( 
+
+
+- Mise à part le Loren ipsum pour moi perso je trouve qu’il est trop sûr de lui et il n’a pas trouvé les juste mots pour moi. Sert il veut faire de la publicité pour sont nouveau glaçage mais bon AVEZ-VOUS GOÛTÉ D'AUSSI BONS CUPCKAES ??!! ,  Il est très très bon ! , composition chimique… C’est peut être pas, ce qui est recherché dans cette activité mais pour moi c’est un no-go. 
+
+
+(Je voulais me désinscrire mais comme il manque le lien je vais le marquer comme spam et je vous invite à faire la même chose. Comme ça si on est assez à le faire, il perdra son compte MailChimp parce que il sera bloqué et il aura perdu son argent parce que personne de nous n’achètera quelque-chose de lui et il peut se la … sa liste d’e-mail qu’il a acheté je ne sais pas ou.) 
+
+
+Merci pour la correction et bonne continuation!

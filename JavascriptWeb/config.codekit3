@@ -388,6 +388,15 @@
 		"oAP": "\/chapiter6\/html\/formulaire.html",
 		"oF": 0
 		},
+	"\/chapiter6\/js\/formulaire-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter6\/js\/formulaire-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/chapiter6\/js\/formulaire.js": {
 		"ft": 64,
 		"mi": 1,
