@@ -21,7 +21,9 @@ setInterval(diminuerCompteur, 1000);
 
 
 // ==> Annuler une action répétée
+/*
 
+===> MISE EN COMMENTAIRE POUR EXERCICE 3 <===
 var compteurElt = document.getElementById("compteur");
 
 // Diminue le compteur jusqu'à 0
@@ -41,3 +43,26 @@ function diminueCompteur() {
 
 // Appelle la fonction diminuerCompteur toutes les secondes
 var intervealId = setInterval(diminueCompteur, 1000);
+*/
+
+// ==> EFFECTUER UNE ACTION APRES UN DELAI <== //
+
+var compteurElt = document.getElementById("compteur");
+
+function diminuerCompteur() {
+    var compteur = Number(compteurElt.textContent);
+    if (compteur > 1) {
+        compteurElt.textContent = compteur - 1;
+    } else {
+        clearInterval(intervalId);
+
+        var titre = document.getElementById("titre");
+        titre.textContent = "BOUM !!!";
+        // Modification du titre au bout de 2 secondes
+        setTimeout(function() {
+            titre.textContent = "Tout est cassé :(";
+        }, 2000);
+    }
+}
+
+var intervalId = setInterval(diminuerCompteur, 1000);

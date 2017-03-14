@@ -1,0 +1,44 @@
+#cadre {
+	border: 2px solid red;
+	overflow: hidden;
+}
+
+#bloc{
+	width: 20px;
+	height: 40px;
+	background-color: orangered;
+	position: relative; /* Permet de decaler le bloc */
+	left: 0px; /* initialise la position gauche de bloc a deplacer */
+}
+
+#cadre1 {
+	margin-top: 20px;
+	border: 2px solid black;
+	background-color: black;
+	overflow: hidden;
+}
+
+#bloc1 {
+	width: 20px;
+	height: 40px;
+	background-color: white;
+	position: relative; /* Permet de decaler le bloc */
+	left: 0px; /* initialise la position gauche de bloc a deplacer */
+
+	/* Animation commence ici */
+	margin-left:-20px; /* simplifie la calcule des position initiale et finale du bloc */
+	animation-name: deplacerBloc;
+	animation-duration: 6s; 
+	animation-fill-mode: forwards; /* laisse le bloc dans sa position finale*/
+
+}
+
+@keyframes deplacerBloc {
+	from{
+		left:20px;
+	}
+	to{
+		left:100%;
+	}
+}
+

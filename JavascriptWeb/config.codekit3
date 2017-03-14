@@ -382,10 +382,38 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/chapiter6\/css\/pays.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/chapiter6\/css\/pays-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/chapiter6\/html\/formulaire.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/chapiter6\/html\/formulaire.html",
+		"oF": 0
+		},
+	"\/chapiter6\/html\/got.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter6\/html\/got.html",
+		"oF": 0
+		},
+	"\/chapiter6\/html\/mdp.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter6\/html\/mdp.html",
+		"oF": 0
+		},
+	"\/chapiter6\/html\/pays.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter6\/html\/pays.html",
 		"oF": 0
 		},
 	"\/chapiter6\/js\/formulaire-min.js": {
@@ -402,6 +430,88 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/chapiter6\/js\/formulaire-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter6\/js\/got.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter6\/js\/got-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter6\/js\/mdp.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter6\/js\/mdp-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter6\/js\/pays.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter6\/js\/pays-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter7\/css\/animerElt.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/chapiter7\/css\/animerElt-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/chapiter7\/html\/animer.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter7\/html\/animer.html",
+		"oF": 0
+		},
+	"\/chapiter7\/html\/animerElt.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter7\/html\/animerElt.html",
+		"oF": 0
+		},
+	"\/chapiter7\/html\/chrono.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter7\/html\/chrono.html",
+		"oF": 0
+		},
+	"\/chapiter7\/js\/animer.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter7\/js\/animer-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter7\/js\/animerElt.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter7\/js\/animerElt-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter7\/js\/chrono.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter7\/js\/chrono-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
