@@ -7,7 +7,7 @@
 		"uuidString": "9DF6A68E-4102-4971-B917-6B89F09FB5CD"
 		}
 	],
-"creatorBuild": "25568",
+"creatorBuild": "25704",
 "files": {
 	"\/activite_1\/css\/liensweb.css": {
 		"aP": 1,
@@ -471,6 +471,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/chapiter7\/css\/ballon.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/chapiter7\/css\/ballon-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/chapiter7\/html\/animer.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -481,6 +491,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/chapiter7\/html\/animerElt.html",
+		"oF": 0
+		},
+	"\/chapiter7\/html\/ballon.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter7\/html\/ballon.html",
 		"oF": 0
 		},
 	"\/chapiter7\/html\/chrono.html": {
@@ -503,6 +519,24 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/chapiter7\/js\/animerElt-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter7\/js\/ballon.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter7\/js\/ballon-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter7\/js\/chrono-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter7\/js\/chrono-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1197,6 +1231,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -1676,6 +1714,10 @@
 		"no-with": {
 			"active": 0,
 			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"object-curly-newline": {
 			"active": 0,
@@ -2276,7 +2318,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -2369,7 +2412,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"enableLossy": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
