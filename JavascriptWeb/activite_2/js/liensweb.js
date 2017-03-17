@@ -56,11 +56,12 @@ function creerElementLien(lien) {
 var contenu = document.getElementById("contenu");
 
 // creation d'un p pour le bouton et formulaire
-
 var boiteElt = document.createElement("p");
 var btnElt = document.createElement("p");
 
 // Creation des differents inputs
+var formElt = document.createElement("form");
+//formElt.id = "leFrom";
 
 var inputAuteur = document.createElement("input");
 inputAuteur.type = "text";
@@ -90,9 +91,6 @@ var inputValidation = document.createElement("button");
 inputValidation.id = "validationLien";
 inputValidation.type = "submit";
 inputValidation.textContent = "Ajouter";
-inputValidation.addEventListener("click", function(e) {
-
-});
 
 
 // creation du boutton qui affiche les input
@@ -107,7 +105,10 @@ ajoutLien.addEventListener("click", function() {
     boiteElt.appendChild(inputTitre);
     boiteElt.appendChild(inputLien);
     boiteElt.appendChild(inputValidation);
-    contenu.replaceChild(boiteElt, contenu.childNodes[1]);
+    formElt.appendChild(boiteElt);
+    //contenu.replaceChild(boiteElt, contenu.childNodes[1]);
+    contenu.replaceChild(formElt, contenu.childNodes[1]);
+    console.log("test");
 });
 
 
@@ -122,8 +123,26 @@ inputValidation.addEventListener("click", function(e) {
     };
 
     if (inputLien.value === "") {
-        e.preventDefault();
+        //e.preventDefault();
+
     } else {
+
+
+        // CONFIRMATION
+
+
+
+        var validationBoxElt = document.createElement("div");
+        validationBoxElt.style.backgroundColor = "#AFE3F1";
+        validationBoxElt.style.color = "#066782";
+        validationBoxElt.style.padding = "1px 20px";
+        var validationTextElt = document.createElement("h4");
+        validationTextElt.textContent = 'Le lien "' + inputTitre.value + '" a bien été ajouté.'
+
+        validationBoxElt.appendChild(validationTextElt)
+
+
+
         var creationLiens = Object.create(nouveauLiens);
         creationLiens.init(inputTitre.value, inputLien.value, inputAuteur.value);
 
@@ -131,11 +150,18 @@ inputValidation.addEventListener("click", function(e) {
 
         contenu.insertBefore(creerElementLien(creationLiens), contenu.childNodes[2]);
         contenu.replaceChild(btnElt, contenu.childNodes[1]);
+        contenu.insertBefore(validationBoxElt, contenu.childNodes[0]);
+        setTimeout(function() {
+            contenu.removeChild(contenu.childNodes[0]);
+
+        }, 2000);
+
 
         // VIDE LES INPUTS
         inputAuteur.value = "";
         inputLien.value = "";
         inputTitre.value = "";
+
     }
 
 });
@@ -146,7 +172,9 @@ inputValidation.addEventListener("click", function(e) {
 
 
 
+
 btnElt.appendChild(ajoutLien);
+
 contenu.appendChild(btnElt);
 
 // Parcours de la liste des liens et ajout d'un élément au DOM pour chaque lien
