@@ -59,6 +59,7 @@ var contenu = document.getElementById("contenu");
 
 var boiteElt = document.createElement("p");
 var btnElt = document.createElement("p");
+
 // Creation des differents inputs
 
 var inputAuteur = document.createElement("input");
@@ -79,10 +80,9 @@ var inputLien = document.createElement("input");
 inputLien.type = "text";
 inputLien.name = "lien";
 inputLien.classList = "inputBox";
-inputLien.required = true;
 inputLien.placeholder = "Entrez l'URL du lien";
 inputLien.style.marginRight = "20px";
-
+inputLien.required = true;
 
 // creation du bouton du formulaire
 
@@ -93,8 +93,6 @@ inputValidation.textContent = "Ajouter";
 inputValidation.addEventListener("click", function(e) {
 
 });
-
-
 
 
 // creation du boutton qui affiche les input
@@ -109,16 +107,12 @@ ajoutLien.addEventListener("click", function() {
     boiteElt.appendChild(inputTitre);
     boiteElt.appendChild(inputLien);
     boiteElt.appendChild(inputValidation);
-    //contenu.appendChild(boiteElt);
-    //contenu.replaceChild(boiteElt, contenu.childNodes[0]);
+    contenu.replaceChild(boiteElt, contenu.childNodes[1]);
 });
 
 
 
-
-
-
-inputValidation.addEventListener("click", function() {
+inputValidation.addEventListener("click", function(e) {
     var nouveauLiens = {
         init: function(titre, url, auteur) {
             this.titre = titre;
@@ -127,19 +121,22 @@ inputValidation.addEventListener("click", function() {
         }
     };
 
+    if (inputLien.value === "") {
+        e.preventDefault();
+    } else {
+        var creationLiens = Object.create(nouveauLiens);
+        creationLiens.init(inputTitre.value, inputLien.value, inputAuteur.value);
 
+        listeLiens.push(creationLiens);
 
-    var creationLiens = Object.create(nouveauLiens);
-    creationLiens.init(inputTitre.value, inputLien.value, inputAuteur.value);
+        contenu.insertBefore(creerElementLien(creationLiens), contenu.childNodes[2]);
+        contenu.replaceChild(btnElt, contenu.childNodes[1]);
 
-    listeLiens.push(creationLiens);
-
-    //var firstLien = document.querySelector("lien");
-    //contenu.appendChild(creerElementLien(creationLiens));
-    //boiteElt.appendChild(ajoutLien);
-    //document.getElementById("contenu").insertBefore(creerElementLien(creationLiens), contenu.childNodes[1]);
-    //document.getElementById("contenu").insertBefore(btnElt, contenu.childNodes[0]);
-    // contenu.removeChild(boiteElt);
+        // VIDE LES INPUTS
+        inputAuteur.value = "";
+        inputLien.value = "";
+        inputTitre.value = "";
+    }
 
 });
 

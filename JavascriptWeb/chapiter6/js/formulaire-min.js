@@ -1,1 +1,0 @@
-var pseudoElt=document.getElementById("pseudo");pseudoElt.value="MonPseudo";
