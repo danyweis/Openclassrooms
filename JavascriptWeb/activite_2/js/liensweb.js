@@ -1,11 +1,3 @@
-/* 
-Activité 1
-*/
-
-// Liste des liens Web à afficher. Un lien est défini par :
-// - son titre
-// - son URL
-// - son auteur (la personne qui l'a publié)
 var listeLiens = [{
     titre: "So Foot",
     url: "http://sofoot.com",
@@ -20,8 +12,7 @@ var listeLiens = [{
     auteur: "annie.zette"
 }];
 
-// Crée et renvoie un élément DOM affichant les données d'un lien
-// Le paramètre lien est un objet JS représentant un lien
+
 function creerElementLien(lien) {
     var titreLien = document.createElement("a");
     titreLien.href = lien.url;
@@ -50,70 +41,64 @@ function creerElementLien(lien) {
 
     return divLien;
 }
+// ==> LES MODIFICATIONS ACTIVITE2 COMMENCENT ICI
 
-// boite ou tout le contenu sera dans la html
-
+// EMPLACEMENT DE TOUT LE CONTENU DANS LE HTML
 var contenu = document.getElementById("contenu");
 
-// creation d'un p pour le bouton et formulaire
+// CREATION DES p ET DU form POUR INTRODUIRE LES INPUTS
 var boiteElt = document.createElement("p");
 var btnElt = document.createElement("p");
-
-// Creation des differents inputs
 var formElt = document.createElement("form");
-//formElt.id = "leFrom";
 
+// CREATION DES DIFFERENTS INPUTS
 var inputAuteur = document.createElement("input");
 inputAuteur.type = "text";
 inputAuteur.name = "auteur";
-inputAuteur.classList = "inputBox";
 inputAuteur.placeholder = "Nom de l'auteur";
 inputAuteur.style.marginRight = "20px";
+inputAuteur.required = true;
 
 var inputTitre = document.createElement("input");
 inputTitre.type = "text";
 inputTitre.name = "titre";
-inputTitre.classList = "inputBox";
 inputTitre.placeholder = "Entrez le Titre du lien";
 inputTitre.style.marginRight = "20px";
+inputTitre.required = true;
 
 var inputLien = document.createElement("input");
 inputLien.type = "text";
 inputLien.name = "lien";
-inputLien.classList = "inputBox";
 inputLien.placeholder = "Entrez l'URL du lien";
 inputLien.style.marginRight = "20px";
 inputLien.required = true;
 
-// creation du bouton du formulaire
-
+// CREATION DU BOUTON DU FORMULAIRE
 var inputValidation = document.createElement("button");
 inputValidation.id = "validationLien";
 inputValidation.type = "submit";
 inputValidation.textContent = "Ajouter";
 
-
-// creation du boutton qui affiche les input
-
+// CREATION DU BOUTON QUI AFFICHE LES INPUT
 var ajoutLien = document.createElement("button");
 ajoutLien.id = "ajoutLien";
 ajoutLien.textContent = "Ajouter un lien";
 ajoutLien.addEventListener("click", function() {
-
 
     boiteElt.appendChild(inputAuteur);
     boiteElt.appendChild(inputTitre);
     boiteElt.appendChild(inputLien);
     boiteElt.appendChild(inputValidation);
     formElt.appendChild(boiteElt);
-    //contenu.replaceChild(boiteElt, contenu.childNodes[1]);
     contenu.replaceChild(formElt, contenu.childNodes[1]);
     console.log("test");
 });
 
 
-
+// VALIDATION DU FORMULAIRE
 inputValidation.addEventListener("click", function(e) {
+
+    // LA BASE DE MON OBJECT
     var nouveauLiens = {
         init: function(titre, url, auteur) {
             this.titre = titre;
@@ -122,40 +107,60 @@ inputValidation.addEventListener("click", function(e) {
         }
     };
 
-    if (inputLien.value === "") {
-        //e.preventDefault();
+    // CREATION DU CONTROL POUR LE HTTP ET HTTPS
+    var regexControlHttp = /http?:\/\/.+/;
+    var regexControlHttps = /https?:\/\/./;
+    if (!regexControlHttp.test(inputLien.value) || !regexControlHttps.test(inputLien.value)) {
+        var leLien = inputLien.value;
+        inputLien.value = "http://" + leLien;
+
+    } else {
+        // else POUR EVITER DE LE R'AJOUTER SI IL ET DEJA PRESENT
+    }
+
+    // CONTROLE SI LE LIEN SE TERMINE PAR XXX.XXX
+    var regexLienHttp = /http?:\/\/.+\..+/;
+    var regexLienHttps = /https?:\/\/.+\..+/;
+    if (!regexLienHttp.test(inputLien.value) || !regexLienHttps.test(inputLien.value) /* || !regexLienHttpWWW.test(inputLien.value) || !regexLienHttpsWWW.test(inputLien.value)*/ ) {
+        console.log(inputLien.value);
+
+        console.log("addresse invalide");
+        inputLien.setCustomValidity("addresse invalide");
+        inputLien.value = "";
 
     } else {
 
+    }
 
-        // CONFIRMATION
+    // SI LES INPUT SON VIDE IL AFFICHE LE MESSAGE 
+    if (inputLien.value === "" || inputAuteur.value === "" || inputTitre.value === "") {
 
+    } else {
 
-
+        // CREATION DU MESSAGE DE VALIDATION
         var validationBoxElt = document.createElement("div");
         validationBoxElt.style.backgroundColor = "#AFE3F1";
         validationBoxElt.style.color = "#066782";
         validationBoxElt.style.padding = "1px 20px";
         var validationTextElt = document.createElement("h4");
-        validationTextElt.textContent = 'Le lien "' + inputTitre.value + '" a bien été ajouté.'
-
+        validationTextElt.textContent = 'Le lien "' + inputTitre.value + '" a bien été ajouté.';
         validationBoxElt.appendChild(validationTextElt)
 
-
-
+        // JE CREE UN OJECT DANS LEQUEL J'AJOUTE LES VALEUR DE L'INPUT
         var creationLiens = Object.create(nouveauLiens);
         creationLiens.init(inputTitre.value, inputLien.value, inputAuteur.value);
-
         listeLiens.push(creationLiens);
 
+        // J'AJOUTE TOUT DANS LE DOM
         contenu.insertBefore(creerElementLien(creationLiens), contenu.childNodes[2]);
         contenu.replaceChild(btnElt, contenu.childNodes[1]);
+
+        // AJOUT DU MESSAGE DE VALIDATION ET ENLEVE APRES 2SEC
         contenu.insertBefore(validationBoxElt, contenu.childNodes[0]);
         setTimeout(function() {
             contenu.removeChild(contenu.childNodes[0]);
 
         }, 2000);
-
 
         // VIDE LES INPUTS
         inputAuteur.value = "";
@@ -165,12 +170,6 @@ inputValidation.addEventListener("click", function(e) {
     }
 
 });
-
-
-
-
-
-
 
 
 btnElt.appendChild(ajoutLien);
