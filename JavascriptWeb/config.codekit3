@@ -34,6 +34,31 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/activite_2\/css\/liensweb.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/activite_2\/css\/liensweb-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/activite_2\/html\/liensweb.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/activite_2\/html\/liensweb.html",
+		"oF": 0
+		},
+	"\/activite_2\/js\/liensweb.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/activite_2\/js\/liensweb-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/chapiter1\/html\/1introduction.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -415,15 +440,6 @@
 		"oA": 2,
 		"oAP": "\/chapiter6\/html\/pays.html",
 		"oF": 0
-		},
-	"\/chapiter6\/js\/formulaire-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/chapiter6\/js\/formulaire-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		},
 	"\/chapiter6\/js\/formulaire.js": {
 		"ft": 64,

@@ -1,0 +1,6 @@
+cd /Applications/MAMP/htdocs/javascript-web-srv
+ 
+POUR ACCEDER A LOCALHOST IL FAUT METTRE 
+
+par ex : http://localhost:8888/javascript-web-srv/data/
+ceci pour rentre dans le serveur : http://localhost:8888
