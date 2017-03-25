@@ -1,4 +1,4 @@
-cd /Applications/MAMP/htdocs/javascript-web-srv
+cd /Applications/MAMP/htdocs/javascript-web-srv/data
  
 POUR ACCEDER A LOCALHOST IL FAUT METTRE 
 

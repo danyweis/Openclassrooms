@@ -1,0 +1,1 @@
+function ajaxGet(e,t){var n=new XMLHttpRequest;n.open("GET",e),n.addEventListener("load",function(){n.status>=200&&n.status<400?t(n.responseText):console.error(n.status+" "+n.statusText+" "+e)}),n.addEventListener("error",function(){console.error("Erreur réseau avec l'URL "+e)}),n.send(null)}

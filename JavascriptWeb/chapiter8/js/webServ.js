@@ -50,6 +50,8 @@ req.send(null);
 // Exécute un appel AJAX GET
 // Prnd en paramètre l'URL cible et la fonction callback appelée en cas de succès
 
+/*  // ceci se retrouve maintenant dans le fichier ajax.js
+
 function ajaxGet(url, callback) {
     var req = new XMLHttpRequest();
     req.open("GET", url);
@@ -66,3 +68,88 @@ function ajaxGet(url, callback) {
     });
     req.send(null);
 }
+
+*/
+
+
+// ==> !!!!! ici on appelle dans le fichier ajax.js !!!!! <== //
+
+ajaxGet("http://localhost:8888/javascript-web-srv/data/langages.txt", function(reponse) {
+    //console.log(reponse);
+});
+
+ajaxGet("http://localhost:8888/javascript-web-srv/data/films.json", function(film) {
+    //console.log(film);
+});
+
+
+
+// ===> APPELS AJAX ET JSON <=== //
+
+var avion = {
+    marque: "Airbus",
+    couleur: "A320"
+};
+console.log(avion);
+// Transforme l'objet JavaScript en chaine de caractères JSON
+var texteAvion = JSON.stringify(avion);
+console.log(texteAvion);
+// Transforme la chaine de caracteres JSON en objet JavaScript
+console.log(JSON.parse(texteAvion)); 
+
+ 
+var avions = [{
+    marque: "Airbus",
+    couleur: "A320"
+}, {
+    marque: "Airbus",
+    couleur: "A380"
+}];
+console.log(avions);
+// Transform le tableau d'objets JS en chaine de caracteres JSON
+var texteAvions = JSON.stringify(avions);
+console.log(texteAvions);
+// Transform la chaine de caracteres JSON en tableaux d'objets JS
+console.log(JSON.parse(texteAvions));
+
+
+
+
+// ==> Recuperer des donnees JSON depuis un serveur
+
+ajaxGet("http://localhost:8888/javascript-web-srv/data/films.json", function(reponse) {
+    var films = JSON.parse(reponse);
+    films.forEach(function(film) {
+        console.log(film.titre);
+    })
+});
+
+// ==> ACTIVITE 1 <== //
+// ==> MON CODE
+ajaxGet("http://localhost:8888/javascript-web-srv/data/langages.txt", function(reponseTxt) {
+    console.log(reponseTxt);
+    var langages = reponseTxt;
+    var regex = /\s*;\s*/;
+    var langagesSplit = langages.split(regex);
+    console.log(langagesSplit);
+
+    for (i = 0; i < langagesSplit.length; i++) {
+        var langage = document.createElement("li");
+        langage.textContent = langagesSplit[i];
+        document.getElementById("langages").appendChild(langage);
+
+    };
+});
+
+// ==> CODE OPC
+
+ajaxGet("http://localhost:8888/javascript-web-srv/data/langages.txt", function(reponseTxt) {
+    var langages = reponseTxt.split(";");
+    var listElt = document.getElementById('langages');
+    // Ajout de chaque langage dans la liste
+    langages.forEach(function(langage) {
+        var langageElt = document.createElement("li");
+        langageElt.textContent = langage;
+        listeElt.appendChild(langageElt);
+    });
+});

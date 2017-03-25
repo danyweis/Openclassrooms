@@ -572,6 +572,33 @@
 		"oAP": "\/chapiter8\/html\/webServ.html",
 		"oF": 0
 		},
+	"\/chapiter8\/js\/ajax-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter8\/js\/ajax-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter8\/js\/ajax.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter8\/js\/ajax-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter8\/js\/webServ-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter8\/js\/webServ-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/chapiter8\/js\/webServ.js": {
 		"ft": 64,
 		"mi": 1,
@@ -581,10 +608,10 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/chapiter8\/webServ.html": {
+	"\/chapiter8\/serveurJSMAMP.txt": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/chapiter8\/webServ.html",
+		"oAP": "\/chapiter8\/serveurJSMAMP.txt",
 		"oF": 0
 		}
 	},
