@@ -566,6 +566,12 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/chapiter8\/html\/tableaux.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter8\/html\/tableaux.html",
+		"oF": 0
+		},
 	"\/chapiter8\/html\/webServ.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -586,6 +592,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/chapiter8\/js\/ajax-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter8\/js\/tableaux.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter8\/js\/tableaux-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -613,6 +628,39 @@
 		"oA": 2,
 		"oAP": "\/chapiter8\/serveurJSMAMP.txt",
 		"oF": 0
+		},
+	"\/chapiter9\/html\/api.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter9\/html\/api.html",
+		"oF": 0
+		},
+	"\/chapiter9\/js\/ajax.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter9\/js\/ajax-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter9\/js\/api-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter9\/js\/api-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter9\/js\/api.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter9\/js\/api-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		}
 	},
 "hooks": [
