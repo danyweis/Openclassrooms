@@ -635,6 +635,12 @@
 		"oAP": "\/chapiter9\/html\/api.html",
 		"oF": 0
 		},
+	"\/chapiter9\/html\/github.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/chapiter9\/html\/github.html",
+		"oF": 0
+		},
 	"\/chapiter9\/js\/ajax.js": {
 		"ft": 64,
 		"mi": 1,
@@ -658,6 +664,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/chapiter9\/js\/api-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/chapiter9\/js\/github.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/chapiter9\/js\/github-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

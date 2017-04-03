@@ -1,0 +1,1 @@
+function recherch(e){console.log(e)}document.getElementById("btnRechercher").addEventListener("click",function(){var e=document.getElementById("inputRechercher").value;recherch(e),e.textContent=""});
