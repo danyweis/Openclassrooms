@@ -1,0 +1,42 @@
+avec GET
+
+curl -X GET -u XXXXXX:XXXXXX \
+--output bonjour.wav \
+"https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?accept=audio/wav&text=bonjour%20et%20bonne%20continuation&voice=fr-FR_ReneeVoice"
+
+
+
+Pour que ça fonctionne il faut mettre les 2 fichier json sur le bureau/desktop
+mon ordi est en anglais c'est possible qu'il faut changer le 
+=>  --data @"Desktop/textCall.json" \  <= 
+par quelque chose comme 
+=>  --data @"Bureau/textCall.json" \   <=
+
+avec POST
+
+en Anglais => DEFAULT:
+
+curl -u XXXXXX:XXXXXXX -X POST \
+--header "Content-Type: application/json" \
+--data @"Desktop/textCall.json" \
+--output activiteAPI.wav \
+"https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize"
+
+FEMME:
+
+curl -u XXXXXX:XXXXXX -X POST \
+--header "Content-Type: application/json" \
+--data @"Desktop/textCall.json" \
+--output activiteAPIfemme.wav \
+"https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?voice=en-US_LisaVoice"
+
+
+FRANCAIS:
+
+curl -u XXXXXX:XXXXXX -X POST \
+--header "Content-Type: application/json" \
+--data @"Desktop/callFr.json" \
+--output activiteAPIfrancais.wav \
+"https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?voice=fr-FR_ReneeVoice"
+
+
