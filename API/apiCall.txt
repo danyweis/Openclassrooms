@@ -1,0 +1,51 @@
+text to speech
+
+{
+  "url": "https://stream.watsonplatform.net/text-to-speech/api",
+  "username": "c45bbe2c-9006-44fa-9130-7d8425f84ffd",
+  "password": "zypiLJiIiIBX"
+}
+
+curl -u c45bbe2c-9006-44fa-9130-7d8425f84ffd:zypiLJiIiIBX -X POST \
+--header "Content-Type: application/json" \
+--header "Accept: audio/wav" \
+--data "{\"text\":\"hello world\"}" \
+--output hello_world.wav \
+"https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize"
+
+Test
+
+curl -X POST -u c45bbe2c-9006-44fa-9130-7d8425f84ffd:zypiLJiIiIBX \
+--header "Content-Type: application/json" \
+--header "Accept: audio/wav" \
+--data @"Desktop/textCall.json" \
+--output hello_world.wav \
+"https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize"
+
+Fonction
+
+
+
+en Anglais
+DEFAULT:
+curl -u c45bbe2c-9006-44fa-9130-7d8425f84ffd:zypiLJiIiIBX -X POST \
+--header "Content-Type: application/json" \
+--data @"Desktop/textCall.json" \
+--output activiteAPI.wav \
+"https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize"
+
+FEMME:
+curl -u c45bbe2c-9006-44fa-9130-7d8425f84ffd:zypiLJiIiIBX -X POST \
+--header "Content-Type: application/json" \
+--data @"Desktop/textCall.json" \
+--output activiteAPIfemme.wav \
+"https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?voices=en-US_LisaVoice"
+
+
+FRANCAIS:
+curl -u c45bbe2c-9006-44fa-9130-7d8425f84ffd:zypiLJiIiIBX -X POST \
+--header "Content-Type: application/json" \
+--data @"Desktop/callFr.json" \
+--output activiteAPIfrancais.wav \
+"https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?voice=fr-FR_ReneeVoice"
+
