@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Envoyer des données</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+</head>
+
+<body>
+    <h3></h3>
+    <form action="">
+        <p>
+            <input type="radio" name="plusfort" id="elephant" value="ELE" checked>
+            <label for="elephant">L'éléphant</label>
+            <br>
+            <input type="radio" name="plusfort" id="rhinoceros" value="RHI">
+            <label for="rhinoceros">Le rhinocéros</label>
+            <br>
+            <input type="radio" name="plusfort" id="hippopotame" value="HIP">
+            <label for="hippopotame">L'hippopotame</label>
+        </p>
+        <p>
+            <label for="nom">Votre nom</label> :
+            <input type="text" name="nom" id="nom" required>
+        </p>
+        <input type="submit" value="Votez">
+    </form>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/envoyer.js"></script>
+</body>
+
+</html>
