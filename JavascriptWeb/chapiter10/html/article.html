@@ -13,18 +13,18 @@
     <form action="">
         <p>
             <lable for="titre">Titre:</lable>
-            <input name="titre" type="text">
+            <input id="titre" name="titre" type="text">
         </p>
         <p>
             <lable for="contenu">Contenu:</lable><br>
             <textarea name="contenu" id="contenu" cols="30" rows="10"></textarea>
         </p>
 
-        <button type="submit">Ajouter</button>
-
+        <button id="btn" type="submit">Ajouter</button>
+        <div id="messageText"></div>
     </form>
 
-    <div id="contenu"></div>
+
 
     <script src="../js/ajaxSSjson.js"></script>
     <script src="../js/article.js"></script>

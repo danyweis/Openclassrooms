@@ -24,7 +24,7 @@ ajaxPost("http://localhost/javascript-web-srv/post_form.php", commande, function
 */
 
 // soumission d'un formulaire avec FormData
-/*
+
 var form = document.querySelector('form');
 // Gestion de la soumission de formulaire
 form.addEventListener('submit', function (e) {
@@ -35,8 +35,8 @@ form.addEventListener('submit', function (e) {
     // La fonction callback est ici vide
     ajaxPost('http://localhost/javascript-web-srv/post_form.php', data, function () {});
 });
-*/
 
+/*
 // TRAVAILLER AVEC JSON
 // creation d'un objet representant un film
 var film = {
@@ -52,3 +52,4 @@ ajaxPost('http://localhost/javascript-web-srv/post_json.php', film,
     },
     true // Valeur du paramètre isJson 
 );
+*/
