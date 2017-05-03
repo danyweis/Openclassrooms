@@ -43,6 +43,13 @@ function creerElementLien(lien) {
 }
 // ==> LES MODIFICATIONS ACTIVITE2 COMMENCENT ICI
 
+
+
+
+
+
+
+
 // EMPLACEMENT DE TOUT LE CONTENU DANS LE HTML
 var contenu = document.getElementById("contenu");
 
@@ -73,11 +80,19 @@ inputLien.placeholder = "Entrez l'URL du lien";
 inputLien.style.marginRight = "20px";
 inputLien.required = true;
 
+
+
+
+
+
+
 // CREATION DU BOUTON DU FORMULAIRE
 var inputValidation = document.createElement("button");
 inputValidation.id = "validationLien";
 inputValidation.type = "submit";
 inputValidation.textContent = "Ajouter";
+
+
 
 // CREATION DU BOUTON QUI AFFICHE LES INPUT
 var ajoutLien = document.createElement("button");
@@ -93,6 +108,13 @@ ajoutLien.addEventListener("click", function () {
     contenu.replaceChild(formElt, contenu.childNodes[1]);
     console.log("test");
 });
+
+
+
+
+prendreInfo();
+
+
 
 
 // VALIDATION DU FORMULAIRE
@@ -173,7 +195,27 @@ contenu.appendChild(btnElt);
 
 // Parcours de la liste des liens et ajout d'un élément au DOM pour chaque lien
 
-listeLiens.forEach(function (lien) {
+/*listeLiens.forEach(function (lien) {
     var elementLien = creerElementLien(lien);
     contenu.appendChild(elementLien);
 });
+*/
+
+
+
+
+
+
+
+// APPELER LES INFO DU SERVEUR
+
+function prendreInfo() {
+    ajaxGet('https://oc-jswebsrv.herokuapp.com/api/liens', function (reponse) {
+        //console.log(JSON.parse(reponse));
+        var lesInfo = JSON.parse(reponse);
+        console.log(lesInfo);
+        for (var i = 0; i < lesInfo.length; i++) {
+            console.log(lesInfo[i]);
+        }
+    });
+}
