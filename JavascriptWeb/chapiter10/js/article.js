@@ -2,7 +2,9 @@ var form = document.querySelector('form');
 form.addEventListener('submit', function (e) {
     e.preventDefault();
     var data = new FormData(form);
-    ajaxPost('http://localhost/javascript-web-srv/post_form.php', data,
+    ajaxPost('http://oc-jswebsrv.herokuapp.com/article'
+        //http://localhost/javascript-web-srv/post_form.php'
+        , data,
         function (reponse) { // LE SERVEUR DE OPC=> http://oc-jswebsrv.herokuapp.com/article
             // CREATION DU MESSAGE DE CONFIRMATION
             var messageText = document.getElementById('messageText');
