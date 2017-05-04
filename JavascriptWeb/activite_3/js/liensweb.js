@@ -1,17 +1,13 @@
-var listeLiens = [{
-    titre: "So Foot",
-    url: "http://sofoot.com",
-    auteur: "yann.usaille"
-}, {
-    titre: "Guide d'autodéfense numérique",
-    url: "http://guide.boum.org",
-    auteur: "paulochon"
-}, {
-    titre: "L'encyclopédie en ligne Wikipedia",
-    url: "http://Wikipedia.org",
-    auteur: "annie.zette"
-}];
+// ALLER SUR LE SERVEUR PRENDRE LES INFOS ET LES STOCKER DANS LISTELIENS
+var listeLiensElt = "";
 
+function prendreInfo() {
+    ajaxGet('https://oc-jswebsrv.herokuapp.com/api/liens', function (reponse) {
+        listeLiensElt = JSON.parse(reponse);
+        posterInfo(listeLiensElt);
+    });
+};
+prendreInfo();
 
 function creerElementLien(lien) {
     var titreLien = document.createElement("a");
@@ -41,14 +37,6 @@ function creerElementLien(lien) {
 
     return divLien;
 }
-// ==> LES MODIFICATIONS ACTIVITE2 COMMENCENT ICI
-
-
-
-
-
-
-
 
 // EMPLACEMENT DE TOUT LE CONTENU DANS LE HTML
 var contenu = document.getElementById("contenu");
@@ -80,19 +68,11 @@ inputLien.placeholder = "Entrez l'URL du lien";
 inputLien.style.marginRight = "20px";
 inputLien.required = true;
 
-
-
-
-
-
-
 // CREATION DU BOUTON DU FORMULAIRE
 var inputValidation = document.createElement("button");
 inputValidation.id = "validationLien";
 inputValidation.type = "submit";
 inputValidation.textContent = "Ajouter";
-
-
 
 // CREATION DU BOUTON QUI AFFICHE LES INPUT
 var ajoutLien = document.createElement("button");
@@ -106,20 +86,11 @@ ajoutLien.addEventListener("click", function () {
     boiteElt.appendChild(inputValidation);
     formElt.appendChild(boiteElt);
     contenu.replaceChild(formElt, contenu.childNodes[1]);
-    console.log("test");
 });
-
-
-
-
-prendreInfo();
-
-
 
 
 // VALIDATION DU FORMULAIRE
 inputValidation.addEventListener("click", function (e) {
-
     // LA BASE DE MON OBJECT
     var nouveauLiens = {
         init: function (titre, url, auteur) {
@@ -132,15 +103,18 @@ inputValidation.addEventListener("click", function (e) {
     // CREATION DU CONTROL POUR LE HTTP ET HTTPS
 
     if ((inputLien.value.indexOf("http://") !== 0) && (inputLien.value.indexOf("https://") !== 0)) {
-        // On la préfixe par "http://"
         inputLien.value = "http://" + inputLien.value;
+
+    } else {
+        // else POUR EVITER DE LE R'AJOUTER SI IL ET DEJA PRESENT
     }
 
     // CONTROLE SI LE LIEN SE TERMINE PAR XXX.XXX
 
-    var regexLienHttp = /^https?:\/\/.+\..+/;
+    var regexLienHttp = /https?:\/\/.+\..+/;
     if (!regexLienHttp.test(inputLien.value)) {
         console.log(inputLien.value);
+
         console.log("addresse invalide");
         inputLien.setCustomValidity("addresse invalide");
         inputLien.value = "";
@@ -166,7 +140,10 @@ inputValidation.addEventListener("click", function (e) {
         // JE CREE UN OJECT DANS LEQUEL J'AJOUTE LES VALEUR DE L'INPUT
         var creationLiens = Object.create(nouveauLiens);
         creationLiens.init(inputTitre.value, inputLien.value, inputAuteur.value);
-        listeLiens.push(creationLiens);
+
+        // ICI J'ENVOI TOUT AU SERVEUR 
+        ajaxPost('https://oc-jswebsrv.herokuapp.com/api/lien', creationLiens, function (reponse) {}, true);
+        //listeLiens.push(creationLiens);
 
         // J'AJOUTE TOUT DANS LE DOM
         contenu.insertBefore(creerElementLien(creationLiens), contenu.childNodes[2]);
@@ -193,29 +170,12 @@ btnElt.appendChild(ajoutLien);
 
 contenu.appendChild(btnElt);
 
-// Parcours de la liste des liens et ajout d'un élément au DOM pour chaque lien
-
-/*listeLiens.forEach(function (lien) {
-    var elementLien = creerElementLien(lien);
-    contenu.appendChild(elementLien);
-});
-*/
 
 
-
-
-
-
-
-// APPELER LES INFO DU SERVEUR
-
-function prendreInfo() {
-    ajaxGet('https://oc-jswebsrv.herokuapp.com/api/liens', function (reponse) {
-        //console.log(JSON.parse(reponse));
-        var lesInfo = JSON.parse(reponse);
-        console.log(lesInfo);
-        for (var i = 0; i < lesInfo.length; i++) {
-            console.log(lesInfo[i]);
-        }
+// PARCOURIR LES INFO PRIS DU SERVEUR ET LES POSTER DANS LE DOM UN APRES L'AUTRE
+function posterInfo(info) {
+    info.forEach(function (lien) {
+        var elementLien = creerElementLien(lien);
+        contenu.appendChild(elementLien);
     });
 }
