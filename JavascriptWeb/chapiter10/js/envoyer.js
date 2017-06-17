@@ -22,9 +22,9 @@ ajaxPost("http://localhost/javascript-web-srv/post_form.php", commande, function
     console.log("Envoi au serveur avec succés");
 });
 */
-
-// soumission d'un formulaire avec FormData
 /*
+// soumission d'un formulaire avec FormData
+
 var form = document.querySelector('form');
 // Gestion de la soumission de formulaire
 form.addEventListener('submit', function (e) {
@@ -40,7 +40,7 @@ form.addEventListener('submit', function (e) {
 // TRAVAILLER AVEC JSON
 // creation d'un objet representant un film
 var film = {
-    titre: "Zootopie",
+    titre: "Zootopi",
     annee: "2016",
     realisateur: "Bryon Howard et Rich Moore"
 };
