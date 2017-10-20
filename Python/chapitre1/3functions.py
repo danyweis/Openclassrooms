@@ -63,3 +63,19 @@ variable = carre(5) # variable est dans ce cas 25
 print(variable)
 
 # Les fonctions LAMBDA
+
+# lambda arg1, arg2, ... : instruction de retour
+lambda x: x * x
+
+f = lambda x: x * x
+f(5) # retour est 25
+
+f(-18) # retour 324
+
+# lambda avec deux arguments
+
+lambda x, y: x + y
+
+# la suite de lambda vien plus tard
+
+
