@@ -42,7 +42,10 @@ print(titre.upper().center(20))
 
 # POUR VOIR D'AUTRE POSSIBILITE ON UTILISE  help(str) DANS L'INTERPRETEUR
 
+
+
 #  => FORMATER ET AFFICHER UNE CHAINE <=
+# METHODE format
 
 prenom = "Paul"
 nom = "Dupont"
@@ -89,3 +92,51 @@ age = 30
 # message = "J'ai " + age + " ans" ==> TypeError : Can't convert 'int' object to str implicitly
 message = "J'ai " + str(age) + " ans"
 print(message) # RESULTAT : J'ai 30 ans
+
+
+
+# ==> PARCOURS ET SELECTION DE CHAINES <==
+
+# ACCEDER AUX CARACTERES D'UNE CHAINE
+
+chaine = "Salut les Zeros !"
+chaine[0] # retourne => S
+chaine[2] # retourne => l
+chaine[-1] # retourne => !
+
+
+# POUR AVOIR LA LONGUEUR DE LA CHAINE => fonction -> len
+
+chaine = "Salut"
+len(chaine) # retourne => 5
+
+
+# PARCOURIR AVEC while
+
+test = "Salut"
+i = 0
+while i < len(test):
+    print(test[i]) # ON AFFICHE LE CARACTERE A CHAQUE TOUR DE BOUCLE
+    i += 1
+
+
+# SELECTION DE CHAINE
+
+presentation = "Salut"
+presentation[0:2] # ON SELECTIONNE LES DEUX PREMIERES LETTRES 'Sa'
+presentation[2:len(presentation)] # ON SELECTIONNE LA CHAINE SAUF LES DEUX PREMIERES LETTRES 'lut'
+presentation[:2] # DU DEBUT JUSQU'A LE TROISIEME LETTRE NON COMPRISE 'Sa'
+presentation[2:] # DE LA TROISIEME LETTRE (COMPRISE) A LA FIN 'lut'
+
+# REMPLACER  UNE LETTRE 
+
+mot = "lac"
+# mot[0] = "b" ==> TypeError 
+mot = "b" + mot[1:] # CA C'EST POSSIBLE
+print(mot) # retourne => bac
+
+""" 
+C'EST POSSIBLE MAIS POUR REMPLACER DES LETTRES DANS DES CHAINE
+C'EST MIEUX D'UTILISER "count", "find" ET "replace"
+"""
+
