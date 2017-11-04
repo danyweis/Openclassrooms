@@ -26,7 +26,7 @@ def afficheFlottant(num):
 
 afficheFlottant(3.99999999)
 
-# CORRECTION 
+# CORRECTION
 
 def affFlottant(flottant):
     if type(flottant) is not float:
@@ -54,7 +54,7 @@ fonctionIncunnue(var, [4], "...") # RETOURNE J'ai reçu : (3.5, [4], "...").
 
 '''
 AUSSI POSSIBLE:
-==> fonctionInconnue(nom, prenom, * commentaires) 
+==> fonctionInconnue(nom, prenom, * commentaires)
 !!! DANS CE CAS C'EST IMPERATIVE DE PRECISER UN NOM ET UN PRENOM,
     ET ENSUITE METTRE CE QU'ON VEUX EN COMMENTAIRES
 
@@ -66,10 +66,10 @@ def afficher (* parametres, sep = ' ', fin = '\n'):
     """ FONCTION CHARGEE DE REPRODUIRE LE COMPORTEMENT DE PRINT.
     ELLE DOIT FINIR PAR FAIRE APPEL A PRINT POUR AFFICHER LE RESULTAT.
     MAIS LES PARAMETRES DEVRONT DEJA AVOIR ETE FORMATES.
-    ON DOIT PASSER A PRINT UNE UNIQUE CHAINE, EN LUI SPECIFIANT DE NE 
+    ON DOIT PASSER A PRINT UNE UNIQUE CHAINE, EN LUI SPECIFIANT DE NE
     RIEN METTRE A LA FIN:
         print(chaine, end = '')"""
-    
+
     # LES PARAMETRES SONT SOUS LA FORME D'UN TUPLE
     # OR ON A BESOIN DE LES CONVERTIR
     # MAIS ON NE PEUT PAS MODIFIER UN TUPLE
