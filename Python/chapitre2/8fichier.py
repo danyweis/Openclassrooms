@@ -1,0 +1,51 @@
+# -*-coding:utf-8 -*
+
+# OUVRIR UN FICHIER AVEC open()
+'''
+open PREND EN PARAMETRE
+-> LE CHEMIN
+-> LE MODE D'OUVERTURE
+    => 'r' OUVERTURE EN LECTURE (READ)
+    => 'w' OUVERTURE EN ECRITURE (WRITE)!!!LE CONTENU DU FICHIER EST ECRASER!!!
+    => 'a' OUVERTURE EN MODE AJOUT (APPEND) ON ECRIT A LA FIN DU FIHIER SANS
+        L'ECRASER!  AVEC 'w' ET 'a' SI LE FICHIER N'EXISTE PAS IL EST CREE
+    ON PEUT AJOUTER A TOUT LES MODES LE SIGNE 'b'POUR L'OUVRIR EN BINAIRE
+'''
+monFichier = open("8fichier.txt", "r")
+print(monFichier) # RENVOIE <_io.TextIOWrapper name='8fichier.txt' mode='r' encoding='UTF-8'>
+
+'''
+LA FONCTION open CREE UN FICHIER ET RENVOIE UN OBJET DE CLASSE TextIOWrapper
+PAR LA SUITE NOUS ALLONS UTILISER DES METHODES DE CETTE CLASSE,
+POUR INTERAGIR AVEC LE FICHIER
+'''
+
+# FERMER UN FICHIER AVEC close()
+'''
+IL NE FAUT PAS OUBLIER DE FERMER UN FICHIER SINON UNE AUTRE PARTIE DU CODE NE PEUT
+PAS Y ACCEDER CAR IL EST ENCORE OUVERT
+'''
+monFichier.close()
+
+# LIRE L'INTEGRALITE DU FICHIER read()
+monFichier = open("8fichier.txt", "r")
+contenu = monFichier.read()
+print(contenu)
+monFichier.close()
+
+# LA METHODE read() RENVOIE TOUT LE CONTENU DU FICHIER
+# contenu EST MAINTENANT UNE CHAINE NORMAL
+
+print(len(contenu))
+
+# ECRITURE DANS UN FICHIER write()
+monFichier = open("8fichier.txt", "w") # J'ECRASE LE CONTENU DU FICHIER
+monFichier.write("Premier fois que j'ecrit quelque chose dans un \
+fichier et tout ca avec Python")
+monFichier.close()
+
+# write() N'ACCEPTE EN PARAMETRES QUE DES CHAINES DE CARACTERES
+# LE MODULE "os"  CONTIENT BEAUCOUP DE FOCTION INTERESSANTES POUR TRAVAILER AVEC DES FICHIERS
+
+
+# LE MOT CLE WITH
