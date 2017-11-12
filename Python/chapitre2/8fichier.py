@@ -49,3 +49,56 @@ monFichier.close()
 
 
 # LE MOT CLE WITH
+'''
+with open(monFichier.txt, modeOuverture) as variable:
+    - operation sur le fichier
+
+ON TROUE DANS L'ORDRE :
+    =>LE MOT-CLE "with" PRELUDE AU BLOC DANS LEQUEL ON VA MANIPULER NOTRE FICHIER
+    =>NOTRE OBJET, QU'ON APPLELLE AVEC open ET QUI RENVOIE TextIOWrapper
+    =>LE MOT-CLE as QUI SIGNIFIE "EN TANT QUE"
+'''
+
+# EXEMPLE
+with open("8fichier.txt", "r") as monFichier:
+    texte = monFichier.read()
+
+# CELA SIGNIFIE SI UNE EXEPTION EST LEVER LE FICHIER SERA TOUT DE MEME FERMERA LA FIN DU BLOC
+# POUR VERIFIER JE PEUX APPELLER monFichier.closed SI LE FICHIER EST FREMER monFichier.closed VAUDRA True
+# C'EST RECOMMANDER D'UTILISER CETTE SYNTEX CAR ELLE EST PLUS SURE
+
+# ==> ENREGISTRER DES OBJETS DANS DES FICHIERS - MODULE pickle <==
+# IL FAUT DEJA IMPORTER LE MODULE
+import pickle
+'''
+with open("donnees", "wb") as fichier:
+    monPickle = pickle.Pickler(fichier)
+    #   enregistrement ...
+'''
+# AU FICHIER ON DONNE PAS EXTANTION ET ON AJOUTE LA LETTRE "b" POUR ECRIRE EN BINAIRE
+
+score = {
+    "joueur 1": 5,
+    "joueur 2": 35,
+    "joueur 3": 20,
+    "joueur 4": 2,
+}
+with open("donnees", "wb") as fichier:
+    monPickle = pickle.Pickler(fichier)
+    monPickle.dump(score) #AVEC LA METHODE .dump() ON ENREGISTRE DANS LE FICHIER
+
+# => RECUPERER NOS OBBJETS ENREGISTRES
+
+'''
+with open("donnees", "rb") as fichier:
+    monDepickler = pickle.Unpickler(fichier)
+    #   lecture des objets dans le fichier
+'''
+# POUR LIRE DANS UN FICHIER IL FAUT UTILISER LA METHODE .load()
+# ELLE RENVOIE LE PREMIER OBJET QUI ETE LU (SI IL Y ON A PLUSIEUR IL FAUT L'APPELER PLUSIEUR FOIS)
+
+with open("donnees", "rb") as fichier:
+    monDepickler = pickle.Unpickler(fichier)
+    scoreRecupere = monDepickler.load()
+
+print(scoreRecupere)

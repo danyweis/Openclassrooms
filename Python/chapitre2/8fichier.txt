@@ -1,3 +1,1 @@
-Premier fois que j'ecrit quelque chose dans un fichier 
-et tout ca avec PythonLa deuxieme fois fois que j'ecrit quelque chose dans un fichier 
-et tout ca avec Python
+Premier fois que j'ecrit quelque chose dans un fichier et tout ca avec Python
