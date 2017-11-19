@@ -10,15 +10,18 @@ hi = len("abcdefgh")
 print(hi)
 '''
 
+'''
 def test():
-    try: # TRY IF THE FILE SCORE EXIST ALLREADY
-        with open("score", "rb") as f:
-            scoreDepickle = pickle.Unpickler(f)
-            getScore = scoreDepickle.load()
-            #print(getScore)
-    except FileNotFoundError: # IF THE FILE DOES NOT EXISTE AND THE PROGRAM RAISES AN ERROR CREATE THE FILE
-        with open("score", "wb") as f:
-            scorePickle = pickle.Pickler(f)
-            scorePickle.dump(donnees.score)
+# TRY IF THE FILE SCORE EXIST ALLREADY
+try:
+    with open("score", "rb") as f:
+        scoreDepickle = pickle.Unpickler(f)
+        getScore = scoreDepickle.load()
+# IF THE FILE DOES NOT EXISTE AND THE PROGRAM RAISES AN ERROR CREATE THE FILE
 
-test()
+except FileNotFoundError:
+    with open("score", "wb") as f:
+        scorePickle = pickle.Pickler(f)
+        scorePickle.dump(donnees.score)
+'''
+#test()

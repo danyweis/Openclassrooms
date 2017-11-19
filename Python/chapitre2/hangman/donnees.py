@@ -1,6 +1,6 @@
 # -*-coding:utf-8 -*
 
-score = {}
+score = {'Tirak': 0}
 
 maxChances = 8
 
