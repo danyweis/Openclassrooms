@@ -3,19 +3,24 @@ import donnees
 import fonctions
 import pickle
 
+
+
 # WELCOME TEXT
 print(donnees.bienvenu)
 test = input(donnees.joueurConnu)
-score = {"hello": 0,}
+
 print(score)
 if test == "S" or test == "s":
     playerName = input("Pseudo : ")
+
+    fonctions.test()
+'''
     if playerName in score is True:
         pass
     else:
         score[playerName] = 0
-
-    print("Bonjour " + playerName + " ton score actuel est de : " + score[playerName].value() + "pts")
+'''
+    #print("Bonjour " + playerName + " ton score actuel est de : " + score[playerName] + "pts")
 elif test == "B" or test == "b":
     with open("scores", "r") as sBoard:
         scoreBoard = sBoard.read()

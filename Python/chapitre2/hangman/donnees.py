@@ -1,5 +1,7 @@
 # -*-coding:utf-8 -*
 
+score = {}
+
 maxChances = 8
 
 bienvenu = "Bienvenu au jeu PENDU"
