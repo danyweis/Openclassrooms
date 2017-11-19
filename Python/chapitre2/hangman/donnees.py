@@ -4,8 +4,10 @@ maxChances = 8
 
 bienvenu = "Bienvenu au jeu PENDU"
 
-joueurConnu = "To sign in press S\nTo create new account press N\n\
-To see the scores board press B\nTo Exit type E\nWhat's your choise : "
+joueurConnu = "To sign in press S\nTo Exit type E\nWhat's your choise : "
+
+#To create new account press N\n\
+#To see the scores board press B\n
 
 listeMots = ['tanneuse', 'sabotais', 'survolta', 'risquons', 'couchage', 'cubiques', 'chantent', 'chargiez', 'guichets',
 'relaxent', 'voyantes', 'renflais', 'écrouait', 'suintant', 'talquons', 'grillant', 'indivise', 'resservi', 'misaines',
