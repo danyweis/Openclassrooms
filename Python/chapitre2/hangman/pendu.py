@@ -17,20 +17,51 @@ except FileNotFoundError:
 
 
 # WELCOME TEXT
-print(donnees.bienvenu)
-test = input(donnees.joueurConnu)
+#print(donnees.bienvenu)
+print(donnees.joueurConnu)
 
 
-if test == "S" or test == "s":
-    with open("score", "rb") as f:
-        scoreDepickle = pickle.Unpickler(f)
-        getScore = scoreDepickle.load()
-    playerName = input("Pseudo : ")
-    if playerName in getScore:
-        print("Hi " + playerName + " you current score is " + getScore[playername])
-    else:
+# OPEN  THE FILE SCORE AND STORE THE SCORE IN getScore
+with open("score", "rb") as f:
+    scoreDepickle = pickle.Unpickler(f)
+    getScore = scoreDepickle.load()
+# ASK THE PLAYER TO TYPE IN HIS NAME
+playerName = str(input("Pseudo : "))
+# LOOK IF THE NAME ALREADY IN THE FILE IF YES SAY HI AND SHOW THE SCORE
+if playerName in getScore.keys():
+    #tester = getScore[playerName]
+    print("Hi " + playerName + " you current score is " + str(getScore[playerName]))
+# IF NAME NOT JET IN THE FILE CREATE PLAYER WITH SCORE OF 0
+else:
+    getScore[playerName] = 0
+    print("Hi " + playerName + " you current score is " + str(getScore[playerName]))
+# START THE GAME OR SET SCORE TO 0
+choix = input(donnees.startGame)
+if choix == "D" or choix == "d":
+    sure = input("Sure? Your score is " + str(getScore[playerName]) + " there is no return your score will be 0 type => Yes <= to delet or anything else to not delet : ")
+    if sure == "Y" or sure == "y":
         getScore[playerName] = 0
-print(getScore)
+    else:
+        pass
+#print(getScore)
+
+print("OK lets start the game")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #    fonctions.test()
 '''
     if playerName in score is True:

@@ -1,12 +1,14 @@
 # -*-coding:utf-8 -*
 
-score = {'Tirak': 0}
+score = {'Tirak': 50}
+
 
 maxChances = 8
 
-bienvenu = "Bienvenu au jeu PENDU"
+startGame = 'To start type "S", to restart type "D" : '
 
-joueurConnu = "To sign in press S\nTo Exit type E\nWhat's your choise : "
+
+joueurConnu = "Lets play hangman"
 
 #To create new account press N\n\
 #To see the scores board press B\n

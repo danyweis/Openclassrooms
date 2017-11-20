@@ -4,6 +4,18 @@ import random
 import pickle
 
 word = random.choice(donnees.listeMots)
+
+
+def wordToFind(toFind, given):
+    lettreOuMot = given
+    lettreDonnees += lettreDonnees
+    for i in toFind:
+        if i in lettreDonnees:
+            print(i)
+        else:
+            print("*")
+    lettreOuMot = ""
+wordToFind(word, "e")
 '''
 pour le mot rechercher on prend ou un ou huit sinon on leve une erreur
 hi = len("abcdefgh")
