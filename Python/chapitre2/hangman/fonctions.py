@@ -6,21 +6,38 @@ import pickle
 word = random.choice(donnees.listeMots)
 
 
-def wordToFind(toFind, given):
-    lettreOuMot = given
-    lettreDonnees += lettreDonnees
-    for i in toFind:
-        if i in lettreDonnees:
-            print(i)
+def wordToFind(toFind):
+    lettreOuMot = False
+    x = 0
+    motChercher = ""
+    motListDonnee = []
+    print(toFind)
+    while x != 8 and lettreOuMot is False:
+
+        exempleDonne = input("Donne une lettre ou un mot a 8 lettre:")
+
+        if len(exempleDonne) == 8:
+            if exempleDonne == toFind:
+                print("bien jouer " + exempleDonne + " etait le mot chercer")
+                lettreOuMot = True
+            else:
+                print("desoler " + exempleDonne + " n'est pas le mot rechercher")
+        elif len(exempleDonne) == 1:
+            motChercher += exempleDonne
+
+            for i in toFind:
+                if i in motChercher:
+                    #print(i)
+                    motListDonnee.append(i)
+                else:
+                    #oprint("*")
+                    motListDonnee.append("*")
         else:
-            print("*")
-    lettreOuMot = ""
-wordToFind(word, "e")
-'''
-pour le mot rechercher on prend ou un ou huit sinon on leve une erreur
-hi = len("abcdefgh")
-print(hi)
-'''
+            print("essaye pas de tricher")
+        print("".join(motListDonnee))
+        motListDonnee = []
+        x +=1
+wordToFind(word)
 
 '''
 def test():
