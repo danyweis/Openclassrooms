@@ -48,8 +48,24 @@ if choix == "D" or choix == "d":
 print("OK lets start the game")
 
 
+test = fonctions.wordToFind(fonctions.randomWordToFind())
+getScore[playerName] += test
+print(getScore[playerName])
+#print(getScore[playerName] + test)
+#fonctions.replay()
+#rejouer = ""
+rejouer = input("Want to play again if yes press Y else press something else : ")
 
+while rejouer == "Y" or rejouer == "y":
+#while replay() == "Y" or replay() == "y":
+    test = 0
+    test = fonctions.wordToFind(fonctions.randomWordToFind())
+    getScore[playerName] += test
+    print(getScore[playerName])
+    #print(getScore[playerName] + test)
 
+    #rejouer = ""
+    rejouer = input("Want to play again if yes press Y else press something else : ")
 
 
 

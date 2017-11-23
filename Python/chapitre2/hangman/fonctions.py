@@ -2,16 +2,23 @@
 import donnees
 import random
 import pickle
+#import pendu
 
-word = random.choice(donnees.listeMots)
+# FUNCTION TO GET RENDOM WORD
+def randomWordToFind():
+    word = random.choice(donnees.listeMots)
+    return word
 
-
+# FUNCTION TO START THE GAME AND PLAY
 def wordToFind(toFind):
     lettreOuMot = False
     x = 0
+    y = 8
+    exempleDonne = ""
     motChercher = ""
     motListDonnee = []
     print(toFind)
+
     while x != 8 and lettreOuMot is False:
 
         exempleDonne = input("Donne une lettre ou un mot a 8 lettre:")
@@ -20,6 +27,9 @@ def wordToFind(toFind):
             if exempleDonne == toFind:
                 print("bien jouer " + exempleDonne + " etait le mot chercer")
                 lettreOuMot = True
+                #global getScore
+                #getScore[playerName] += y
+                return y
             else:
                 print("desoler " + exempleDonne + " n'est pas le mot rechercher")
         elif len(exempleDonne) == 1:
@@ -29,6 +39,10 @@ def wordToFind(toFind):
                 if i in motChercher:
                     #print(i)
                     motListDonnee.append(i)
+                    if "*" in motListDonnee == False:
+                        #global getScore
+                        #getScore[playerName] += y
+                        return y
                 else:
                     #oprint("*")
                     motListDonnee.append("*")
@@ -36,8 +50,20 @@ def wordToFind(toFind):
             print("essaye pas de tricher")
         print("".join(motListDonnee))
         motListDonnee = []
-        x +=1
-wordToFind(word)
+        x += 1
+        y -= 1
+
+#wordToFind(word)
+
+def replay():
+    rejouer = ""
+    rejouer = input("Want to play again if yes press Y else press something else : ")
+    return rejouer
+
+
+
+
+
 
 '''
 def test():
