@@ -47,7 +47,7 @@ if choix == "D" or choix == "d":
 
 print("OK lets start the game")
 
-
+# test => THE SCORE OF THE ROUND IT IS "Y"
 test = fonctions.wordToFind(fonctions.randomWordToFind())
 getScore[playerName] += test
 print(getScore[playerName])
@@ -56,11 +56,16 @@ print(getScore[playerName])
 #rejouer = ""
 rejouer = input("Want to play again if yes press Y else press something else : ")
 
-while rejouer == "Y" or rejouer == "y":
+while rejouer == "Y" or rejouer == "y" or rejouer == "YES" or rejouer == "yes":
 #while replay() == "Y" or replay() == "y":
-    test = 0
+    testScore = 0
     test = fonctions.wordToFind(fonctions.randomWordToFind())
     getScore[playerName] += test
+    with open("score", "wb") as putScoreIn:
+        monEnregistrement = pickle.Pickler(putScoreIn)
+        monEnregistrement.dump(getScore)
+        #monPickle = pickle.Pickler(fichier)
+        #monPickle.dump(score)
     print(getScore[playerName])
     #print(getScore[playerName] + test)
 

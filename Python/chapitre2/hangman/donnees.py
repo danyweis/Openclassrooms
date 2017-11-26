@@ -5,7 +5,7 @@ score = {'Tirak': 50}
 
 maxChances = 8
 
-startGame = 'To start type "S", to restart type "D" : '
+startGame = 'To start type "S", to reset you score type "D" : '
 
 
 joueurConnu = "Lets play hangman"

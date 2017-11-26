@@ -39,17 +39,23 @@ def wordToFind(toFind):
                 if i in motChercher:
                     #print(i)
                     motListDonnee.append(i)
-                    if "*" in motListDonnee == False:
+
+                    #if "*" in motListDonnee == False:
                         #global getScore
                         #getScore[playerName] += y
-                        return y
+                        #return y
                 else:
                     #oprint("*")
                     motListDonnee.append("*")
         else:
             print("essaye pas de tricher")
-        print("".join(motListDonnee))
+        leMotDit = "".join(motListDonnee)
+        print(leMotDit)
         motListDonnee = []
+        if leMotDit == toFind:
+            print("bien jouer " + leMotDit + " etait le mot chercer")
+            lettreOuMot = True
+            return y
         x += 1
         y -= 1
 
