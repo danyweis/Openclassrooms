@@ -21,7 +21,7 @@ def recupScores():
     soit un dictionnaire vide.
     On s'appuie sur nomFichierScores definit dans donnees.py"""
 
-    if os.path.exists(nomFichierScores0):
+    if os.path.exists(nomFichierScores):
         # LE FICHIER EXISTE ON LE RECUPERE
         fichierScores = open(nomFichierScores, "rb")
         monDepickler = pickle.Unpickler(fichierScores)
@@ -61,3 +61,37 @@ def recupNomUtilisateur():
         return nomUtilisateur
 
 def recupLettre():
+    """ Cette fonction recurere une lettre saisie par l'utilisateur.
+    Si la chaine recuperee n'est pas une lettre on appelle recursivement
+    la fonction jusqu'a obtenir une lettre"""
+
+    lettre = input("Tapez une lettre: ")
+    lettre = lettre.lower()
+    if len(lettre) > 1 or not lettre.isalpha():
+        print("Vous avez pas saisie une lettre valide.")
+        return recupLettre()
+    else:
+        return lettre
+
+# FONCTION DU JEU DE PENDU
+
+def choisirMot():
+    """ Cette fonction renvoie le mot choisi dans la liste des mots => listeMots
+    On utilise la fonction choice du module random."""
+
+    return choice(listeMots)
+
+def recupMotMasque(motComplet, lettresTrouves):
+    """ Cette fonction renvoie un mot masque tout ou en partie, en fonction:
+    - du mot d'origine (type str)
+    - des lettres deja trouvees (type list)
+    On renvoie le mot d'origine avec des * remplacant
+    des lettres que l'on n'a pas encore trouvees"""
+
+    motMasque = ""
+    for lettre in motComplet:
+        if lettre in lettresTrouves:
+            motMasque += lettre
+        else:
+            motMasque += "*"
+    return motMasque
