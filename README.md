@@ -1,4 +1,3 @@
 # Openclassrooms
 Exercises
-Je vais mettre mon parcours d'une année de OPC ici il y aura que des exercices 
-je passe aussi du temps sur FreeCodeCamp
+Je vais mettre mon parcours sur OPC ici il y aura que des exercices 
