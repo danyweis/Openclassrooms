@@ -1,3 +1,3 @@
 # Openclassrooms
-Exercises
-Je vais mettre mon parcours sur OPC ici il y aura que des exercices 
+
+In this repository are all the exercises I do while learning on the platform (OPENCLASSROOMS)[https://openclassrooms.com/]
