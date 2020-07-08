@@ -2,9 +2,14 @@
   <section class="menu">
     <h2>Menu</h2>
     <div v-for="item in simpleMenu" :key="item.name" class="menu-item">
-      <img class="menu-item__image" :src="item.image.source" :alt="item.image.alt" />
+      <img
+        class="menu-item__image"
+        :src="item.image.source"
+        :alt="item.image.alt"
+      />
       <div>
-        <h3>{{item.name}}</h3>
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.price }}</p>
         <p v-if="item.inStock">In Stock</p>
         <p v-else>Out of Stock</p>
         <div>
@@ -23,8 +28,8 @@ export default {
   name: "MenuItem",
   props: {
     simpleMenu: Array,
-    addToShoppingCart: Function
-  }
+    addToShoppingCart: Function,
+  },
 };
 </script>
 
