@@ -9,7 +9,7 @@
       enough!
     </p>
 
-    <MenuItem :simpleMenu="simpleMenu" :addToShoppingCart="addToShoppingCart" />
+    <MenuItem :simpleMenu="simpleMenu" @add-items-to-cart="addToShoppingCart" />
 
     <aside class="shopping-cart">
       <h2>Shopping Cart: {{ items }} items</h2>
@@ -27,7 +27,7 @@ import MenuItem from "../components/MenuItem.vue";
 export default {
   name: "Home",
   components: {
-    MenuItem,
+    MenuItem
   },
   data() {
     return {
@@ -39,68 +39,76 @@ export default {
           name: "Crossiant",
           image: {
             source: "/images/crossiant.jpg",
-            alt: "A crossiant",
+            alt: "A crossiant"
           },
           inStock: true,
           quantity: 1,
-          price: 2.99,
+          price: 2.99
         },
         {
           name: "French Baguette",
           image: {
             source: "/images/french-baguette.jpeg",
-            alt: "Four French Baguettes",
+            alt: "Four French Baguettes"
           },
           inStock: true,
           quantity: 1,
-          price: 3.99,
+          price: 3.99
         },
         {
           name: "Éclair",
           image: {
             source: "/images/eclair.jpg",
-            alt: "Chocolate Éclair",
+            alt: "Chocolate Éclair"
           },
           inStock: false,
           quantity: 1,
-          price: 4.99,
-        },
-      ],
+          price: 4.99
+        }
+      ]
     };
   },
   methods: {
-    addToShoppingCart(item) {
-      this.items += Number(item.quantity);
+    addToShoppingCart(payload) {
+      console.log(payload);
+      this.items += Number(payload.items.quantity);
     },
     checkDate() {
       const evenDate = new Date().getDay();
       if (evenDate % 2 === 0) {
-        this.simpleMenu.forEach((element) => {
+        this.simpleMenu.forEach(element => {
           element.price *= 0.9;
           element.price = Math.round(element.price * 100) / 100;
         });
       }
-    },
+    }
   },
   computed: {
     copyright() {
       const currentYear = new Date().getFullYear();
       return `Copyright ${this.restaurantName} ${currentYear}`;
-    },
+    }
   },
-  created() {
+  beforeMount() {
     this.checkDate();
-  },
+  }
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.description {
+  max-width: 960px;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+.shopping-cart {
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+.footer {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-style: italic;
 }
 </style>
