@@ -2,7 +2,11 @@
   <section class="menu">
     <h2>Menu</h2>
     <div v-for="item in simpleMenu" :key="item.name" class="menu-item">
-      <img class="menu-item__image" :src="item.image.source" :alt="item.image.alt" />
+      <img
+        class="menu-item__image"
+        :src="item.image.source"
+        :alt="item.image.alt"
+      />
       <div>
         <h3>{{ item.name }}</h3>
         <p>{{ item.price }}</p>
@@ -13,7 +17,9 @@
           <input v-model="item.quantity" id="add-item-quantity" type="number" />
 
           <BaseButton>
-            <button @click="updateShoppingCart(item)">Add to Shopping Cart</button>
+            <button @click="updateShoppingCart(item)">
+              Add to Shopping Cart
+            </button>
           </BaseButton>
         </div>
       </div>
@@ -23,21 +29,27 @@
 
 <script>
 import BaseButton from "./BaseButton.vue";
+import { mapState } from "vuex";
 
 export default {
   name: "MenuItem",
   components: {
-    BaseButton
+    BaseButton,
   },
-  props: {
-    simpleMenu: { type: Array, default: () => [] }
-  },
+  // props: {
+  //   simpleMenu: { type: Array, default: () => [] }
+  // },
   methods: {
     updateShoppingCart(item) {
       //console.log(this.$emit("add-items-to-card", { items: this.item }));
       this.$emit("add-items-to-cart", { items: item });
-    }
-  }
+    },
+  },
+  computed: {
+    ...mapState({
+      simpleMenu: "simpleMenu",
+    }),
+  },
 };
 </script>
 

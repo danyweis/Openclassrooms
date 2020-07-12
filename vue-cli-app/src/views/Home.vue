@@ -9,7 +9,8 @@
       enough!
     </p>
 
-    <MenuItem :simpleMenu="simpleMenu" @add-items-to-cart="addToShoppingCart" />
+    <!-- <MenuItem :simpleMenu="simpleMenu" @add-items-to-cart="addToShoppingCart" /> -->
+    <MenuItem @add-items-to-cart="addToShoppingCart" />
 
     <aside class="shopping-cart">
       <h2>Shopping Cart: {{ items }} items</h2>
@@ -23,49 +24,17 @@
 
 <script>
 import MenuItem from "../components/MenuItem.vue";
+import { mapState } from "vuex";
 
 export default {
   name: "Home",
   components: {
-    MenuItem
+    MenuItem,
   },
   data() {
     return {
-      restaurantName: "Cafe avec vue",
       items: 0,
       quantityInCart: "",
-      simpleMenu: [
-        {
-          name: "Crossiant",
-          image: {
-            source: "/images/crossiant.jpg",
-            alt: "A crossiant"
-          },
-          inStock: true,
-          quantity: 1,
-          price: 2.99
-        },
-        {
-          name: "French Baguette",
-          image: {
-            source: "/images/french-baguette.jpeg",
-            alt: "Four French Baguettes"
-          },
-          inStock: true,
-          quantity: 1,
-          price: 3.99
-        },
-        {
-          name: "Éclair",
-          image: {
-            source: "/images/eclair.jpg",
-            alt: "Chocolate Éclair"
-          },
-          inStock: false,
-          quantity: 1,
-          price: 4.99
-        }
-      ]
     };
   },
   methods: {
@@ -76,22 +45,25 @@ export default {
     checkDate() {
       const evenDate = new Date().getDay();
       if (evenDate % 2 === 0) {
-        this.simpleMenu.forEach(element => {
+        this.simpleMenu.forEach((element) => {
           element.price *= 0.9;
           element.price = Math.round(element.price * 100) / 100;
         });
       }
-    }
+    },
   },
   computed: {
+    ...mapState({
+      restaurantName: "restaurantName",
+    }),
     copyright() {
       const currentYear = new Date().getFullYear();
       return `Copyright ${this.restaurantName} ${currentYear}`;
-    }
+    },
   },
   beforeMount() {
     this.checkDate();
-  }
+  },
 };
 </script>
 
