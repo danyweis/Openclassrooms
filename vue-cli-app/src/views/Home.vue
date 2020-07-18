@@ -1,20 +1,31 @@
 <template>
-  <div id="app">
+  <div>
     <h1>{{ restaurantName }}</h1>
     <p class="description">
-      Bonjour to {{ restaurantName }}! We are known for our freshly baked bread
+      Welcome to {{ restaurantName }}! We are known for our freshly baked bread
       and french pastries! Give you morning a warm start or treat yourself in
       the middle of the day. Our butter is imported from local farmers in
       France. Once you take your first bite, you will see why everyone can't get
       enough!
     </p>
 
-    <!-- <MenuItem :simpleMenu="simpleMenu" @add-items-to-cart="addToShoppingCart" /> -->
-    <MenuItem @add-items-to-cart="addToShoppingCart" />
+    <section class="menu">
+      <h2>Menu</h2>
+      <MenuItem
+        v-for="item in simpleMenu"
+        @add-items-to-cart="addToShoppingCart"
+        :name="item.name"
+        :image="item.image"
+        :price="item.price"
+        :quantity="item.quantity"
+        :inStock="item.inStock"
+        :key="item.name"
+      />
+    </section>
 
-    <aside class="shopping-cart">
-      <h2>Shopping Cart: {{ items }} items</h2>
-    </aside>
+    <div class="shopping-cart">
+      <h2>Shopping Cart: {{ shoppingCart }} items</h2>
+    </div>
 
     <footer class="footer">
       <p>{{ copyright }}</p>
@@ -23,47 +34,28 @@
 </template>
 
 <script>
-import MenuItem from "../components/MenuItem.vue";
-import { mapState } from "vuex";
-
+import MenuItem from "../components/MenuItem";
+import { mapGetters, mapState } from "vuex";
 export default {
   name: "Home",
   components: {
-    MenuItem,
-  },
-  data() {
-    return {
-      items: 0,
-      quantityInCart: "",
-    };
-  },
-  methods: {
-    addToShoppingCart(payload) {
-      console.log(payload);
-      this.items += Number(payload.items.quantity);
-    },
-    checkDate() {
-      const evenDate = new Date().getDay();
-      if (evenDate % 2 === 0) {
-        this.simpleMenu.forEach((element) => {
-          element.price *= 0.9;
-          element.price = Math.round(element.price * 100) / 100;
-        });
-      }
-    },
+    MenuItem
   },
   computed: {
+    ...mapGetters({
+      copyright: "copyright"
+    }),
     ...mapState({
       restaurantName: "restaurantName",
-    }),
-    copyright() {
-      const currentYear = new Date().getFullYear();
-      return `Copyright ${this.restaurantName} ${currentYear}`;
-    },
+      shoppingCart: "shoppingCart",
+      simpleMenu: "simpleMenu"
+    })
   },
-  beforeMount() {
-    this.checkDate();
-  },
+  methods: {
+    addToShoppingCart(amount) {
+      this.shoppingCart += amount;
+    }
+  }
 };
 </script>
 
@@ -73,14 +65,19 @@ export default {
   font-size: 1.2rem;
   margin: 0 auto;
 }
-
+.footer {
+  font-style: italic;
+  text-align: center;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .shopping-cart {
   position: absolute;
   right: 30px;
   top: 0;
-}
-.footer {
-  text-align: center;
-  font-style: italic;
 }
 </style>

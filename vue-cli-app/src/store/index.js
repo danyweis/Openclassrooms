@@ -5,7 +5,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    restaurantName: "Cafe avec vue",
+    restaurantName: "Cafe with A Vue",
+    shoppingCart: 0,
     simpleMenu: [
       {
         name: "Crossiant",
@@ -39,7 +40,13 @@ export default new Vuex.Store({
       },
     ],
   },
-  getters: {},
+  getters: {
+    copyright: (state) => {
+      const currentYear = new Date().getFullYear();
+
+      return `Copyright ${state.restaurantName} ${currentYear}`;
+    },
+  },
   mutations: {},
   actions: {},
   modules: {},

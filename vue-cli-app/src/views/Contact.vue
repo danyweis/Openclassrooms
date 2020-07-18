@@ -1,3 +1,16 @@
+<script>
+export default {
+  name: "Contact",
+  data() {
+    return {
+      address: "9274 Beurre Ave, Paris, France",
+      email: "hello@cafewithavue.bakery",
+      phone: "+08 88 88 88 88 88"
+    };
+  }
+};
+</script>
+
 <template>
   <div>
     <h2>Contact Us</h2>
@@ -12,18 +25,5 @@
     </ul>
   </div>
 </template>
-
-<script>
-export default {
-  name: "Contact",
-  data() {
-    return {
-      address: "9274 Beurre Ave, Paris, France",
-      phone: "+08 88 88 88 88 88",
-      email: "hello@cafewithavue.bakery",
-    };
-  },
-};
-</script>
 
 <style></style>
